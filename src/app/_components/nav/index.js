@@ -39,7 +39,7 @@ export default function Navigation() {
 
   function render() {
     let choice = (<Navbar toggle={toggle} />);
-    if (width < 800) {
+    if (width < 1100) {
       choice = (<Sidebar isOpen={isOpen} toggle={toggle} />);
     }
     return choice;
