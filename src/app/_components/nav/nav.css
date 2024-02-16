@@ -1,0 +1,29 @@
+.nav {
+  position: sticky;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+
+  background-color: lightgray;
+  z-index: 100;
+}
+
+.horizontal-navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-navbar-list {
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+.horizontal-navbar-list li {
+  margin: 5px 8px 5px 8px;
+}
+
+.horizontal-navbar-link {
+  text-decoration: none;
+}

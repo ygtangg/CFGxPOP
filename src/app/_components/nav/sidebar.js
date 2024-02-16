@@ -1,16 +1,13 @@
+import React from "react";
 import Link from "next/link";
+
 
 export default function Sidebar({isOpen, toggle}) {
   return (
     <>
-      <div
-        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
-        style={{
-          opacity: `${isOpen ? "1" : "0"}`,
-          top: ` ${isOpen ? "0" : "-100%"}`,
-        }}
-      >
-        <button className="absolute right-0 p-5" onClick={toggle}>
+      <div>
+        {/* LOGO */}
+        <button className="" onClick={toggle}>
           {/* Close icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
