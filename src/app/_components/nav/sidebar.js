@@ -9,7 +9,7 @@ export default function Sidebar({isOpen, toggle}) {
       return (
         <div className="vertical-open">
           <img 
-            src='https://www.plasticoceanproject.org/files/theme/images/POP_long.png' 
+            src="white_logo.png"
             alt="Logo"
             className="logo"
           />
@@ -61,7 +61,7 @@ export default function Sidebar({isOpen, toggle}) {
       return (
         <div className="vertical-close">
           <img 
-            src='https://www.plasticoceanproject.org/files/theme/images/POP_long.png' 
+            src="white_logo.png"
             alt="Logo"
             className="logo"
           />

@@ -3,19 +3,19 @@
   left: 0%;
   top: 0%;
   width: 100%;
-
-  background-color: lightgray;
+  background-color: black;
   z-index: 100;
 }
 
 
 .logo {
-  width: 500px;
+  width: 400px;
   height: 100%;
 
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  margin-left: 5%;
 }
 
 
@@ -26,8 +26,12 @@
 .horizontal-list {
   display: flex;
   flex-direction: row;
+  width: 100%;
 
   list-style-type: none;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: right;
 }
 .horizontal-list li {
   margin: 5px 8px 5px 8px;

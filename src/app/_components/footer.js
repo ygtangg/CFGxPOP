@@ -7,7 +7,12 @@ import "./footer.css";
 export default function Footer() {
   return (
     <div className='footer'>
-      Footer
+      <hr></hr>
+      <img
+        src="white_logo.png"
+        alt="Logo"
+        className="logo"
+      />
     </div>
   );
 }

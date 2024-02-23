@@ -1,0 +1,54 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #365d90;
+}
+
+a:hover{
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+html, body {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 1px;
+  margin: 1px;
+  font-family:
+    var(--font-jura),
+    var(--font-forum);
+  line-height: 1.2;
+  background-color: var(--black);
+  text-align: center;
+}
+
+h1{ /* Large titles */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    size: 50px;;
+    color: var(--white);
+    font-family: var(--font-jura);
+}
+
+h2{ /* Section titles */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    size: 40px;
+    color: var(--white);
+}
+
+h3{ /* Big font for regular */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    size: 32px;
+    color: var(--white);
+}
+
+p{ /* text info */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    size: 24px;
+    font: var(--font-forum);
+    color: var(--white);
+}

@@ -38,7 +38,7 @@ export default function Navigation() {
   const { height, width } = useWindowDimensions();
 
   function render() {
-    let choice = (<Navbar toggle={toggle} />);
+    let choice = (<Navbar/>);
     if (width < 1100) {
       choice = (<Sidebar isOpen={isOpen} toggle={toggle} />);
     }

@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <div className="horizontal-wrapper">
         <img 
-          src='https://www.plasticoceanproject.org/files/theme/images/POP_long.png' 
+          src="white_logo.png"
           alt="Logo"
           className="logo"
         />
@@ -40,6 +40,7 @@ export default function Navbar() {
         </ul>
         {/* BUTTON */}
       </div>
+      <hr />
     </>
   );
 }
