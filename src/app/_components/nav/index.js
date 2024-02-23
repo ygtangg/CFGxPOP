@@ -17,13 +17,13 @@ function getWindowDimensions() {
 };
 function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
+    {width:10000, height:10000}
   );
   useEffect(() => {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return windowDimensions;
