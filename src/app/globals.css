@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Jura Bold';
+  src: url('/jura/JuraDemiBold.ttf') format('truetype');
+  /* Add additional font properties as needed */
+}
+@font-face {
+  font-family: 'Jura Regular';
+  src: url('/jura/JuraLight.ttf') format('truetype');
+  /* Add additional font properties as needed */
+}
+@font-face {
+  font-family: 'Forum';
+  src: url('/forum/Forum-Regular.otf') format('truetype');
+  /* Add additional font properties as needed */
+}
+
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -26,29 +42,31 @@ html, body {
 h1{ /* Large titles */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    size: 50px;;
+    font-size: 50px;
     color: var(--white);
-    font-family: var(--font-jura);
+    font-family: 'Jura Bold', sans-serif;
 }
 
 h2{ /* Section titles */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    size: 40px;
+    font-size: 40px;
     color: var(--white);
+    font-family: 'Jura Regular', sans-serif;
 }
 
 h3{ /* Big font for regular */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    size: 32px;
+    font-size: 32px;
     color: var(--white);
+    font-family: 'Jura Regular', sans-serif;
 }
 
 p{ /* text info */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    size: 24px;
-    font: var(--font-forum);
+    font-size: 24px;
     color: var(--white);
+    font-family: 'Forum',sans-serif;
 }

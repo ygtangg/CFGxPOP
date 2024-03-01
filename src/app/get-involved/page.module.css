@@ -1,22 +1,77 @@
+.imageContainer {
+  position: relative;
+}
+
+/* main image */
 .backgroundImage {
-    width: 100vw;
-    height: 600px;
+  width: 100vw;
+  height: 50vw;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.257) 0%, rgba(0, 0, 0, 0.706) 100%); /* Adjust gradient as needed */
 }
 
 .title {
-    position: absolute;
-    top: 35%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-size: 70px;
-    text-align: center; 
-  }
-
-.subtitle {
-  left: 0;
-  padding-left: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 5.5vw;
+  text-align: center; 
+  white-space: nowrap;
 }
 
-.emptyLines {
-    margin-bottom: 20px;
+/* button */
+.buttonContainer {
+  position: absolute;
+  bottom: 20vh; /* Adjust bottom position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+  gap: 20px; /* Add gap between grid items */
+  width: 80%;
+  align-items: center;
+}
+
+.button {
+  margin: 0 10px; /* Adjust margin between buttons as needed */
+  padding: 45px 20px;
+  font-size: 30px;
+  background-color: #0000005e; /* Adjust background color as needed */
+  color: #FFFFFF; /* Adjust text color as needed */
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  font-family: 'Jura Bold', sans-serif;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #ccccccaf; /* Adjust background color on hover as needed */
+}
+
+.mainTexts {
+  margin-top: 60px;
+  left: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1000px) {
+  .buttonContainer {
+    grid-template-columns: repeat(2, 1fr); /* Change to two columns */
+    bottom: 2vh;
+  }
+  .button {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
 }

@@ -13,28 +13,28 @@ export default function Navbar() {
         />
         <ul className="horizontal-list">
           <li>
-            <Link className="horizontal-link" href="/">
-              <p>Home</p>
+            <Link className="horizontal-link" href="/home">
+              <p style={{ fontSize: '18px'}}>Home</p>
             </Link>
           </li>
           <li>
             <Link className="horizontal-link" href="/about-the-documentary">
-              <p>About The Documentary</p>
+              <p style={{ fontSize: '18px'}}>About The Documentary</p>
             </Link>
           </li>
           <li>
             <Link className="horizontal-link" href="/about-the-organization">
-              <p>About The Organization</p>
+              <p style={{ fontSize: '18px'}}>About The Organization</p>
             </Link>
           </li>
           <li>
             <Link className="horizontal-link" href="/get-involved">
-              <p>Get Involved</p>
+              <p style={{ fontSize: '18px'}}>Get Involved</p>
             </Link>
           </li>
           <li>
             <Link className="horizontal-link" href="/nature-economic-paradigm-shift">
-              <p>Nature Economic Paradigm Shift</p>
+              <p style={{ fontSize: '18px'}}>Nature Economic Paradigm Shift</p>
             </Link>
           </li>
         </ul>
