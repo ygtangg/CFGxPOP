@@ -1,0 +1,3 @@
+module.exports = {
+  assets: ['CFGXPOP/assets/forum/'],
+};
