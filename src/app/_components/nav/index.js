@@ -2,13 +2,15 @@
 
 import React from 'react';
 import { useState, useEffect } from "react";
-import Navbar from "./navbar";
-import Sidebar from "./sidebar";
+import { Navbar, CollapseBar } from "./navbar";
 
-import "./nav.css";
+import "./navbar.css";
 
 
 function getWindowDimensions() {
+  if (typeof window === "undefined") {
+    return {width:10000, height:10000}
+  }
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,
@@ -17,7 +19,7 @@ function getWindowDimensions() {
 };
 function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(
-    {width:10000, height:10000}
+    getWindowDimensions()
   );
   useEffect(() => {
     function handleResize() {
@@ -40,7 +42,7 @@ export default function Navigation() {
   function render() {
     let choice = (<Navbar/>);
     if (width < 1100) {
-      choice = (<Sidebar isOpen={isOpen} toggle={toggle} />);
+      choice = (<CollapseBar isOpen={isOpen} toggle={toggle} />);
     }
     return choice;
   };
@@ -48,6 +50,7 @@ export default function Navigation() {
   return (
     <div className='nav'>
       {render()}
+      <hr />
     </div>
   );
 }

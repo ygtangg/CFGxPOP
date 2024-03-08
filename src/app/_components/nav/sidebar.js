@@ -4,54 +4,59 @@ import Link from "next/link";
 
 export default function Sidebar({isOpen, toggle}) {
 
+  function collapse() {
+    document.getElementById("menu-button").classList.toggle("change");
+    toggle()
+  }
+  
+  function base() {
+    return (
+      <div className="menu-header">
+        <img 
+          src="white_logo.png"
+          alt="Logo"
+          className="logo"
+        />
+        <div className="collapse-button">
+          <div id="menu-button" className="collapse-container" onClick={() => collapse()}>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   function render() {
     if (isOpen) {
       return (
         <div className="vertical-open">
-          <img 
-            src="white_logo.png"
-            alt="Logo"
-            className="logo"
-          />
-
-          <button className="" onClick={toggle}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-              />
-            </svg>
-          </button>
-
+          { base() }
           <ul className="vertical-list">
             <li>
-              <Link className="vertical-link" href="/">
-                <p>Home</p>
+              <Link className="vertical-link" href="/home">
+                <p className="navbar-text">Home</p>
               </Link>
             </li>
             <li>
               <Link className="vertical-link" href="/about-the-documentary">
-                <p>About The Documentary</p>
+                <p className="navbar-text">About The Documentary</p>
               </Link>
             </li>
             <li>
               <Link className="vertical-link" href="/about-the-organization">
-                <p>About The Organization</p>
+                <p className="navbar-text">About The Organization</p>
               </Link>
             </li>
             <li>
               <Link className="vertical-link" href="/get-involved">
-                <p>Get Involved</p>
+                <p className="navbar-text">Get Involved</p>
               </Link>
             </li>
             <li>
               <Link className="vertical-link" href="/nature-economic-paradigm-shift">
-                <p>Nature Economic Paradigm Shift</p>
+                <p className="navbar-text">Nature Economic Paradigm Shift</p>
               </Link>
             </li>
           </ul>
@@ -60,25 +65,7 @@ export default function Sidebar({isOpen, toggle}) {
     } else {
       return (
         <div className="vertical-close">
-          <img 
-            src="white_logo.png"
-            alt="Logo"
-            className="logo"
-          />
-
-          <button className="" onClick={toggle}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-              />
-            </svg>
-          </button>
+          { base() }
         </div>
       );
     }
