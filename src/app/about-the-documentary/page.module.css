@@ -41,3 +41,111 @@
     text-align: center; /* Center text within this specific container */
     }
   
+    #tl-bottom-line {
+      position: absolute;
+      width: 80%;
+      aspect-ratio: 250 / 1;
+      bottom: 21.5%;
+      left: 10%;
+      border-radius: 100px;
+      background-color: black;
+  }
+
+
+  #doc-timeline .tl-section {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: calc((var(--tl-pos) - 1)* 20%);
+  }
+
+  #doc-timeline .tl-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    transition: left 0.5s ease;
+  }
+
+   
+  #doc-timeline .tl-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    transition: left 0.5s ease;
+  
+  }
+
+  .tl-section .tl-pin-line {
+    position: absolute;
+    width: 0px;
+    left: calc(50% - 0.2vw);
+    height: 45%;
+    bottom: 25%;
+    border-style: none dashed none none;
+    border-width: 0.4vw;
+}
+
+.tl-section .tl-pin-line-cover {
+  position: absolute;
+  width: 4%;
+  left: 48%;
+  height: 50%;
+  top: 25%;
+  background-color: white;
+  transition: height 0.5s ease;
+}
+
+.tl-section .tl-pin {
+  position: absolute;
+  height: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  aspect-ratio: 3 / 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: top 0.5s ease;
+}
+    
+.tl-section .tl-dot {
+  position: absolute;
+  bottom: 20%;
+  left: 47.5%;
+  width: 5%;
+  aspect-ratio: 1 / 1;
+  background-color: #0c9d8e;
+  border-radius: 50%;
+}
+
+.tl-section-title {
+  position: absolute;
+  left: 50%;
+  bottom: calc(3% - 10px);
+  transform: translateX(-50%);
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 2vw;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transition-delay: 0.4s;
+}
+
+.tl-section-text {
+  position: relative;
+  left: 65%;
+  top: 45%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transition-delay: 0;
+  font-family: "Source Sans Pro";
+}
+
+proj-timeline .tl-section {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: calc((var(--tl-pos) - 1)* 20%);
+}
