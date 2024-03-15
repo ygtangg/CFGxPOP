@@ -45,7 +45,7 @@
   justify-content: right;
 }
 .horizontal-list li {
-  margin: 5px 8px 5px 8px;
+  margin: 0px 8px 0px 8px;
 }
 .horizontal-link {
   text-decoration: none;
@@ -117,4 +117,16 @@
 
 .navbar-text {
   font-size: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+
+  border-radius: 10px;
+}
+
+.navbar-text:hover {
+  background: rgb(20,110,221);
+  background: radial-gradient(ellipse, rgba(20,110,221,1) 10%, rgba(13,61,190,1) 26%, rgba(11,34,154,1) 48%, rgba(0,0,0,1) 85%);
 }

@@ -21,3 +21,30 @@
   padding-right:20px;
 }
 
+@media only screen and (min-width: 1350px) {
+  .movie_row{
+  padding-top:50px;
+  display: flex;
+  flex-direction: row;
+  
+  }
+
+  .movie_poster{
+  padding-left:5%;
+  width: 50%;
+  }
+
+  .showings{
+  padding-top:50px;
+  width: 50%;
+  padding-right:5%;
+  }
+}
+@media only screen and (max-width: 1349px) { 
+  .movie_poster{
+  }
+  .showings{
+    padding-top:50px;
+  }
+}
+
