@@ -4,11 +4,13 @@ import Link from "next/link";
 
 function renderLogo() {
   return (
-    <img 
-      src="white_logo.png"
-      alt="Logo"
-      className="logo"
-    />
+    <Link className="logo-container" href="/home">
+      <img
+        src="white_logo.png"
+        alt="Logo"
+        className="logo"
+      />
+    </Link>
   );
 }
 

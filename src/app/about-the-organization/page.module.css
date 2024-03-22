@@ -1,0 +1,36 @@
+.horizontalSpace {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.verticalSpace {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  margin-left: 10%;
+  margin-right: 0%;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 1%;
+  margin-right: 0%;
+}
+
+.singleImage {
+  margin: 5%;
+  max-width: 80%;
+  max-height: 80%;
+}
