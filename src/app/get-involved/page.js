@@ -1,7 +1,8 @@
 "use client";
 import styles from "./page.module.css";
 import { animateScroll } from 'react-scroll';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
 
 export default function Home() {
   useEffect(() => {
@@ -10,8 +11,8 @@ export default function Home() {
   // Function to handle smooth scroll
   const scrollToElement = (elementId) => {
     animateScroll.scrollTo(document.getElementById(elementId).offsetTop, {
-      duration: 600, 
-      smooth: 'easeInOutQuart' 
+      duration: 600,
+      smooth: 'easeInOutQuart'
     });
   };
 
@@ -26,26 +27,40 @@ export default function Home() {
           <h1 class={styles.title}>Support Our Mission</h1>
           <div class={styles.buttonContainer}>
             <button onClick={() => scrollToElement('donate')} class={styles.button}>Donate</button>
-            <button onClick={() => scrollToElement('screening')} class={styles.button} >Screening</button>
             <button onClick={() => scrollToElement('volunteer')} class={styles.button}>Volunteer</button>
             <button onClick={() => scrollToElement('sponsor')} class={styles.button}>Sponsor</button>
+            <button onClick={() => scrollToElement('screening')} class={styles.button} >Screenings</button>
           </div>
         </div>
-        <div class={styles.mainTexts} id="donate">
-          <h2>Donate</h2>
-          <p>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}</p>
-        </div>
-        <div class={styles.mainTexts} id='screening'>
-          <h2>Organize Screenings</h2>
-          <p>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}</p>
-        </div>
-        <div class={styles.mainTexts} id='volunteer'>
-          <h2>Volunteer with an Organization</h2>
-          <p>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}</p>
-        </div>
-        <div class={styles.mainTexts} id='sponsor'>
-          <h2>Sponsor Us</h2>
-          <p>{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}</p>
+        <div className={styles.bodyContainer}>
+          <div className={styles.bodyRow}>
+            <div className={styles.text}>
+              <div className={styles.mainTexts} id="donate">
+                <h2 className={styles.subTitle}>Donate</h2>
+                <p>If you want to help save our oceans and contribute to the cause, please donate to the organizations that worked on the documentary.</p>
+              </div>
+              <div className={styles.mainTexts} id='volunteer'>
+                <h2 className={styles.subTitle}>Volunteer with an Organization</h2>
+                <p>One of the ways we bring awareness is through local screenings at film festivals, movie theaters, and other events. To help organize a screening in your area, please <a target="_top" href='mailto:emily@plasticoceanproject.org'>contact us</a> and we can help you figure out details and logistics.</p>
+              </div>
+              <div className={styles.mainTexts} id='sponsor'>
+                <h2 className={styles.subTitle}>Sponsor Us</h2>
+                <p>If you're part of an organization or company looking to help make a difference, reach out to us about sponsorship opportunities! The film and all of the organizations who helped create it are looking for sponsors and would love to collaborate with you on current and future projects.</p>
+              </div>
+              <div className={styles.mainTexts} id='screening'>
+                <h2 className={styles.subTitle}>Organize Screenings</h2>
+                <p>One of the ways we reach out to the community is through setting up physical screenings in the area. Whether it's in a movie theater, film festival, or other event, showing people how they can make a difference helps inspire everyone to help change the world for the better.</p>
+              </div>
+            </div>
+            <div className={styles.logos}>
+              <p>many organization logos would go here and link to their websites</p>
+              <a href="plasticoceanproject.org"><img src='/circular_logo.png'></img></a>
+              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='\CFGLogoClear.png'></img></a>
+              <img src='/white_logo.png'></img>
+              
+              
+            </div>
+          </div>
         </div>
       </div>
     </main>
