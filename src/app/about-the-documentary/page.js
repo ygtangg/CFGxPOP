@@ -58,6 +58,7 @@ let n = 5;
 // var tl_contents = $('.tl-content').toArray();
 // var tl_sections = $('.tl-section').toArray();
 
+/*
 function hoverSection(hover_index) {
   old_index = tl_contents[hover_index].getAttribute("hover_index")
   if(old_index != hover_index) {
@@ -95,6 +96,6 @@ for (var i = 0; i < n; i++ ) {
       tl_sections[i].addEventListener("mouseleave", () => leaveSection(i))
   })(i)
 }
-
+*/
 
 
