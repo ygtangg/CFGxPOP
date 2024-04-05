@@ -1,6 +1,6 @@
 "use client"
 import styles from "./page.module.css";
-<script src="jquery.min.js"></script>
+// <script src="jquery.min.js"></script>
 
 /* SECTION 1: Barebone of the webpage 
 Attributed to Kelly Tang :)
@@ -18,22 +18,105 @@ export default function Home() {
         </div>
         <div class={styles.mainTexts}>
           <h2 class={styles.subtitle}> Our Mission </h2>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
         <div class={styles.mainTexts}>
             <h2 class={styles.subtitle}>Documentary Creation Outline <br/></h2>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-       
-        <div id="tl-bottom-line">
-          
+        
+        <div class={styles.timeline}>
+        <div class={styles.bottomLine}></div>
+        <div class={styles.section} style={{'--tl-pos': 1}} id="stage1">
+          <div class={styles.content}>
+            <div class={styles.pinLine}></div>
+            <div class={styles.pinLineCover}></div>
+            <div class={styles.pin}></div>
+            <div class={styles.dot}></div>
+            <p class={styles.sectionTitle}>Outreach</p>
+            <div class={styles.sectionText}>
+              <h1>Outreach</h1>
+              <p>
+                First, we reach out to nonprofit and humanitarian
+                organizations, and work with them to find projects that best
+                help them achieve their goals.
+              </p>
+            </div>
+          </div>
         </div>
-       
-      
+        <div class={styles.section} style={{'--tl-pos': 2}} id="stage2">
+          <div class={styles.content}>
+            <div class={styles.pinLine}></div>
+            <div class={styles.pinLineCover}></div>
+            <div class={styles.pin}></div>
+            <div class={styles.dot}></div>
+            <p class={styles.sectionTitle}>Matching</p>
+            <div class={styles.sectionText}>
+              <h1>Matching</h1>
+              <p>
+                We match each CFG developer with a compatible project team, with
+                an eye toward balancing experience levels and enthusiasm for the
+                nonprofit’s cause.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class={styles.section} style={{'--tl-pos': 3}} id="stage3">
+          <div class={styles.content}>
+            <div class={styles.pinLine}></div>
+            <div class={styles.pinLineCover}></div>
+            <div class={styles.pin}></div>
+            <div class={styles.dot}></div>
+            <p class={styles.sectionTitle}>Design</p>
+            <div class={styles.sectionText}>
+              <h1>Design</h1>
+              <p>
+                Each group plans out and designs all aspects of the project,
+                building a visual prototype to incorporate feedback from the
+                organization.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class={styles.section} style={{'--tl-pos': 4}} id="stage4">
+          <div class={styles.content}>
+            <div class={styles.pinLine}></div>
+            <div class={styles.pinLineCover}></div>
+            <div class={styles.pin}></div>
+            <div class={styles.dot}></div>
+            <p class={styles.sectionTitle}>Build</p>
+            <div class={styles.sectionText}>
+              <h1>Build</h1>
+              <p>
+                Developers work towards their projects with productive weekly
+                meetings and tasks. Teams discuss their progress with the whole
+                club in general meetings.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class={styles.section} style={{'--tl-pos': 5}} id="stage5">
+          <div class={styles.content}>
+            <div class={styles.pinLine}></div>
+            <div class={styles.pinLineCover}></div>
+            <div class={styles.pin}></div>
+            <div class={styles.dot}></div>
+            <p class={styles.sectionTitle}>Finalize</p>
+            <div class={styles.sectionText}>
+              <h1>Finalize</h1>
+              <p>
+                Finally, teams can make any requested adjustments and ensure the
+                project is polished before shipping it to the organizations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+             
         <div class= {styles.centerTexts}>
           <h2 class={styles.subtitle}>Thanks to All Our Sponsors! </h2>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
         <div class={styles.imageContainer}>

@@ -51,113 +51,162 @@
     text-align: center; /* Center text within this specific container */
     }
 
-    /* added slidebar css stuff */
   
-    #tl-bottom-line {
+  
+    /* Slidebar CSS Portion:
+
+      1. section
+      2. content
+      3. pinLine
+      4. pinLineCover
+      5. pin
+      6. dot
+      7. sectionTitle
+      8. sectionText
+    */
+  
+    /* section css code */
+    .timeline {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 7/2;
+      margin: 0% 0% 5%;
+    }
+
+    .timeline .section {
       position: absolute;
-      width: 80%;
-      aspect-ratio: 250 / 1;
-      bottom: 21.5%;
-      left: 10%;
-      border-radius: 100px;
-      background-color: black;
-  }
+      width: 20%;
+      height: 100%;
+      left: calc((var(--tl-pos) - 1) * 20%);
+    }
+
+    .section .pin {
+      position: absolute;
+      height: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50%;
+      aspect-ratio: 3/4;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: top 0.5s ease;
+    }
+
+    .section:hover .pin {
+        top: 5%;
+    }
+
+    .section .pinLine {
+        position: absolute;
+        width: 0px;
+        left: calc(50% - 0.2vw);
+        height: 45%;
+        bottom: 25%;
+        border-style: none dashed none none;
+        border-width: 0.4vw;
+    }
+
+    .section .pinLineCover {
+        position: absolute;
+        width: 4%;
+        left: 48%;  
+        height: 50%;
+        top: 25%;
+        background-color: white;
+        transition: height 0.5s ease;
+    }
+
+    .section:hover .pinLineCover {
+        height: 0%;
+    }
+
+    .section .dot {
+        position: absolute;
+        bottom: 20%;
+        left: 47.5%;
+        width: 5%;
+        aspect-ratio: 1/1;
+        background-color: #0c9d8e;
+        border-radius: 50%;
+    }
+
+    .bottomLine {
+        position: absolute;
+        width: 80%;
+        aspect-ratio: 250/1;
+        bottom: 21.5%;
+        left: 10%;
+        border-radius: 100px;
+        background-color: white;
+    }
+
+    .sectionTitle {
+        position: absolute;
+        left: 50%;
+        bottom: calc(3% - 10px);
+        transform: translateX(-50%);
+        font-family: "Source Sans Pro";
+        font-weight: 700;
+        font-size: 2vw;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        transition-delay: 0.4s;
+    }
+
+    .section:hover .sectionTitle {
+        opacity: 0;
+        transition-delay: 0.1s;
+    }
+
+    .sectionText {
+        position: relative;
+        left: 65%;
+        top: 45%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        transition-delay: 0;
+        font-family: "Source Sans Pro";
+    }
+
+    .stage5 .sectionText {
+        left: -55%;
+    }
+
+    .sectionText p {
+        font-weight: 400;
+        font-size: 1.4vw;
+    }
+
+    .sectionText h1 {
+        font-weight: 700;
+        font-size: 3vw;
+    }
+
+    .section:hover .sectionText {
+        opacity: 1;
+        transition-delay: 0.4s;
+    }
+
+    /* TODO: Get the icons working!!! */
+    #stage1 .pin { background-image: url("/octopus.png"); }
+    #stage1 .pinLine { border-color: #53b5b1; }
+
+    #stage2 .pin { background-image: url("/penguin.png"); }
+    #stage2 .pinLine { border-color: #87be4a; }
+
+    #stage3 .pin { background-image: url("/shark.png"); }
+    #stage3 .pinLine { border-color: #d76931; }
+
+    #stage4 .pin { background-image: url("/whale_tail.png"); }
+    #stage4 .pinLine { border-color: #ae5979; }
+
+    #stage5 .pin { background-image: url("/whale.png"); }
+    #stage5 .pinLine { border-color: #a563a4; }
+
+  /* 2. content css code */
 
 
-  #doc-timeline .tl-section {
-    position: absolute;
-    width: 20%;
-    height: 100%;
-    left: calc((var(--tl-pos) - 1)* 20%);
-  }
 
-  #doc-timeline .tl-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    transition: left 0.5s ease;
-  }
 
-   
-  #doc-timeline .tl-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    transition: left 0.5s ease;
-  
-  }
-
-  .tl-section .tl-pin-line {
-    position: absolute;
-    width: 0px;
-    left: calc(50% - 0.2vw);
-    height: 45%;
-    bottom: 25%;
-    border-style: none dashed none none;
-    border-width: 0.4vw;
-}
-
-.tl-section .tl-pin-line-cover {
-  position: absolute;
-  width: 4%;
-  left: 48%;
-  height: 50%;
-  top: 25%;
-  background-color: white;
-  transition: height 0.5s ease;
-}
-
-.tl-section .tl-pin {
-  position: absolute;
-  height: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
-  aspect-ratio: 3 / 4;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: top 0.5s ease;
-}
-    
-.tl-section .tl-dot {
-  position: absolute;
-  bottom: 20%;
-  left: 47.5%;
-  width: 5%;
-  aspect-ratio: 1 / 1;
-  background-color: #0c9d8e;
-  border-radius: 50%;
-}
-
-.tl-section-title {
-  position: absolute;
-  left: 50%;
-  bottom: calc(3% - 10px);
-  transform: translateX(-50%);
-  font-family: "Source Sans Pro";
-  font-weight: 700;
-  font-size: 2vw;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  transition-delay: 0.4s;
-}
-
-.tl-section-text {
-  position: relative;
-  left: 65%;
-  top: 45%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  transition-delay: 0;
-  font-family: "Source Sans Pro";
-}
-
-proj-timeline .tl-section {
-  position: absolute;
-  width: 20%;
-  height: 100%;
-  left: calc((var(--tl-pos) - 1)* 20%);
-}
+  /* */
