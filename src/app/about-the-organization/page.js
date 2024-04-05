@@ -1,25 +1,65 @@
+"use client"
+import React from 'react';
+import {useState} from 'react';
 import styles from "./page.module.css";
-
-export default function Home() {
-  return (
-    <div>
-      <div className={styles.horizontalSpace}>
-        <div className={styles.verticalSpace}>
-          <div>
-            <h1>This was a <br /> GIANT collaboration</h1>
-            <div style={{marginTop: "50px"}}></div>
-            <h3>We would like to thank ... for sponsoring ths project.<br />Without you guys we would not be able to ...</h3>
+// Edward Zhang
+function ImageButton(){
+  const [index, setindex] =useState(0);
+  function handleIncrement(){
+    setindex((index+1)%3);
+  }
+  function handleDecrement(){
+    setindex((index+2)%3);
+  }
+  function ImageChange(){
+    if(index === 0){
+      return(
+        <div className={styles.imageContainer}>
+        <img src="Bonnie with newborn whale 356.jpg" className={styles.backgroundImage}></img>
+        <div className={styles.overlay}>
+          <h1>hahahah</h1>
+        </div>
+      </div>
+      );
+    }
+    else if (index === 1){
+      return(
+        <div className={styles.imageContainer}>
+          <img src="Screen Shot 2023-06-30 at 7.24.43 AM.png" className={styles.backgroundImage}></img>
+          <div className={styles.overlay}>
+            <h1>hahahah</h1>
           </div>
         </div>
-        <div className={styles.imageContainer}>
-          <img className={styles.singleImage} src="https://www.plasticoceanproject.org/uploads/1/3/2/4/132466152/img-5483-2_orig.jpg"></img>
-        </div>
+      );
+    }
+    return(
+      <div className={styles.imageContainer}>
+          <img src="N Core Banks we found 356.jpg" className={styles.backgroundImage}></img>
+          <div className={styles.overlay}>
+            <h1>hahahah</h1>
+          </div>
       </div>
-
-      <div className={styles.horizontalSpace}>
-        {/* PUT IMAGE CAROUSEL HERE */}
-      </div>
+    );
+  }
+  return(
+    <div>
+      <button onClick = {handleIncrement}>Increment</button>
+      <button onClick = {handleDecrement}>Decrement</button>
+      <ImageChange/>
     </div>
   );
 }
-
+export default function Profile(){
+  return (
+    <div>
+      <div className={styles.topPage}>
+        <div className={styles.leftText}>
+          <h1>This was a {"\n"} GIANT collaboration</h1>
+          <h3>We would like to thank... for sponsoring this project. {"\n"} Without you guys, we would not be able to...</h3>
+        </div>
+        <img src='/6267ddaeab-poster.jpeg' className={styles.rightImage}></img>
+      </div>
+      <ImageButton/>
+    </div>
+  );
+}
