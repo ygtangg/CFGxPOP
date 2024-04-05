@@ -47,7 +47,7 @@ function renderList(normal) {
         </li>
         <li>
           <Link className={link_class} href="/nature-economic-paradigm-shift">
-            <p className="navbar-text">Nature Economic Paradigm Shift</p>
+            <p className="navbar-text">Solutions</p>
           </Link>
         </li>
       </ul>
