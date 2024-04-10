@@ -28,24 +28,27 @@ export default function Home() {
         
         <div class={styles.timeline}>
         <div class={styles.bottomLine}></div>
-        <div class={styles.section} style={{'--tl-pos': 1}} id="stage1">
-          <div class={styles.content}>
-            <div class={styles.pinLine}></div>
-            <div class={styles.pinLineCover}></div>
-            <div class={styles.pin}></div>
-            <div class={styles.dot}></div>
-            <p class={styles.sectionTitle}>Outreach</p>
-            <div class={styles.sectionText}>
-              <h1>Outreach</h1>
-              <p>
-                First, we reach out to nonprofit and humanitarian
-                organizations, and work with them to find projects that best
-                help them achieve their goals.
-              </p>
+        <div class={styles.section} style={{'--tl-pos': 1}}>
+          <div class={styles.stage1}>
+            <div class={styles.content}>
+              <div class={styles.pinLine}></div>
+              <div class={styles.pinLineCover}></div>
+              <div class={styles.pin}></div>
+              <div class={styles.dot}></div>
+              <p class={styles.sectionTitle}>Outreach</p>
+              <div class={styles.sectionText}>
+                <h1>Outreach</h1>
+                <p>
+                  First, we reach out to nonprofit and humanitarian
+                  organizations, and work with them to find projects that best
+                  help them achieve their goals.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class={styles.section} style={{'--tl-pos': 2}} id="stage2">
+        <div class={styles.section} style={{'--tl-pos': 2}}>
+        <div class={styles.stage2}>
           <div class={styles.content}>
             <div class={styles.pinLine}></div>
             <div class={styles.pinLineCover}></div>
@@ -60,9 +63,11 @@ export default function Home() {
                 nonprofit’s cause.
               </p>
             </div>
+            </div>
           </div>
         </div>
-        <div class={styles.section} style={{'--tl-pos': 3}} id="stage3">
+        <div class={styles.section} style={{'--tl-pos': 3}}>
+        <div class={styles.stage3}>
           <div class={styles.content}>
             <div class={styles.pinLine}></div>
             <div class={styles.pinLineCover}></div>
@@ -77,9 +82,11 @@ export default function Home() {
                 organization.
               </p>
             </div>
+            </div>
           </div>
         </div>
-        <div class={styles.section} style={{'--tl-pos': 4}} id="stage4">
+        <div class={styles.section} style={{'--tl-pos': 4}}>
+        <div class={styles.stage4}>
           <div class={styles.content}>
             <div class={styles.pinLine}></div>
             <div class={styles.pinLineCover}></div>
@@ -94,9 +101,11 @@ export default function Home() {
                 club in general meetings.
               </p>
             </div>
+            </div>
           </div>
         </div>
-        <div class={styles.section} style={{'--tl-pos': 5}} id="stage5">
+        <div class={styles.section} style={{'--tl-pos': 5}}>
+        <div class={styles.stage5}>
           <div class={styles.content}>
             <div class={styles.pinLine}></div>
             <div class={styles.pinLineCover}></div>
@@ -109,6 +118,7 @@ export default function Home() {
                 Finally, teams can make any requested adjustments and ensure the
                 project is polished before shipping it to the organizations.
               </p>
+            </div>
             </div>
           </div>
         </div>
@@ -140,7 +150,7 @@ let n = 5;
 // TODO: fix the issue of "$"
 // var tl_contents = $('.tl-content').toArray();
 // var tl_sections = $('.tl-section').toArray();
-
+// TODO: document.getElementsByClassName("tl-content").
 /*
 function hoverSection(hover_index) {
   old_index = tl_contents[hover_index].getAttribute("hover_index")
