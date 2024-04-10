@@ -80,6 +80,17 @@
     padding-right: 5vw;
     padding-top: 10vw;
   }
+  .imageButton{
+    width:1vw;
+    height: 1vw;
+  }
+  .arrowContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .transparentButton{
+    background-color: transparent;
+  }
 
   /* Media query for smaller screens */
   @media only screen and (max-width: 1000px) {
