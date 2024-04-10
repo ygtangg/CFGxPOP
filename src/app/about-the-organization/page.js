@@ -43,8 +43,10 @@ function ImageButton(){
   }
   return(
     <div>
-      <button onClick = {handleIncrement}>Increment</button>
-      <button onClick = {handleDecrement}>Decrement</button>
+      <div className={styles.arrowContainer}>
+        <button onClick = {handleDecrement} className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton}/></button>
+        <button onClick = {handleIncrement} className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton}/></button>
+      </div>
       <ImageChange/>
     </div>
   );
