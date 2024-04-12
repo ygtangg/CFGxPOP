@@ -43,6 +43,8 @@ export default function Navigation() {
     let choice = (<Navbar/>);
     if (width < 1100) {
       choice = (<CollapseBar isOpen={isOpen} toggle={toggle} />);
+    } else {
+      if (isOpen) setIsOpen(false);
     }
     return choice;
   };
@@ -50,7 +52,7 @@ export default function Navigation() {
   return (
     <div className='nav'>
       {render()}
-      <hr />
+      <hr className='white-bar'/>
     </div>
   );
 }
