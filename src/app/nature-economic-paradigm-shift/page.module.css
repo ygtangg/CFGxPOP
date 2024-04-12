@@ -1,53 +1,106 @@
-.leftPerson {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 50px;
+.rightPerson p{
+    padding-bottom: 10px;
 }
-
-.leftPersonText {
-    width: 75%;
-    padding-left: 5%;
+.leftPerson p{
+    padding-bottom: 10px;
 }
+@media only screen and (min-width: 1350px) {
+    .leftPerson {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
+    }
 
-.rightPerson {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 50px;
+    .leftPersonText {
+        width: 75%;
+        padding-left: 5%;
+    }
+
+    .rightPerson {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
+    }
+
+    .rightPersonText {
+        width: 75%;
+        padding-right: 5%;
+    }
 }
+@media only screen and (max-width: 1349px) {
+    .leftPerson {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
+    }
 
-.rightPersonText {
-    width: 75%;
-    padding-right: 5%;
+    .leftPersonText {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 76%;
+    }
+
+    .rightPerson {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
+    }
+    .rightPersonText {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 75%;
+        order: 2;
+    }
+    .rightPersonImg{
+        order: 1;
+    }
 }
 
 .overlay {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vw;
+    height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%);
     /* Adjust gradient as needed */
 }
-
-.title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5.5vw;
-    text-align: center;
-    white-space: nowrap;
+.imageContainer{
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 .backgroundImage {
+    z-index: 0;
     width: 100%;
     height: 40vw;
     display: block;
+}
+
+.titleDiv{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 2;
+}
+.title {
+    position: absolute;
+    font-size: 5.5vw;
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
 }
