@@ -4,12 +4,14 @@
   
   /* main image */
   .backgroundImage {
-    width: 100vw;
-    height: 50vw;
+    width: 100%;
+    max-height: 50%;
     display: block;
   }
   
   .overlay {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     top: 0;
     left: 0;
@@ -64,9 +66,10 @@
     text-align: left;
   }
   .rightImage {
-    width: 30vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
   }
   .topPage{
     display: flex;
@@ -75,21 +78,36 @@
     padding-left: 10%;
   }
   .leftText{
-    width: 40vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 10vw;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .imageButton{
-    width:1vw;
-    height: 1vw;
-  }
-  .arrowContainer{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    height: 50%;
   }
   .transparentButton{
     background-color: transparent;
+    width: 100%;
+    height: 50%;
+    border: none;
+  }
+  .leftButton{
+    padding-top: 30%;
+    padding-left: 5%;
+  }
+  .rightButton{
+    padding-top: 30%;
+    padding-right: 5%;
+  }
+  .middleText{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+    height: 40%;
+    width: 60%;
   }
 
   /* Media query for smaller screens */
