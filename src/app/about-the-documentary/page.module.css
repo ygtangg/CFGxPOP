@@ -66,6 +66,11 @@
     */
   
     /* section css code */
+
+
+  
+
+
     .timeline {
       position: relative;
       width: 100%;
@@ -80,6 +85,43 @@
       height: 100%;
       left: calc((var(--tl-pos) - 1) * 20%);
     }
+
+    .timeline .content {
+       
+      left: 0%;
+      transition: left 0.5s ease;
+      
+  
+    }
+
+
+    .stage1 .pin { background-image: url("/octopus.png"); }
+    .pinLine { 
+      border-color: #5393b5; 
+    }
+     
+    
+    .stage2 .pin { background-image: url("/penguin.png"); }
+    .stage2 .pinLine { 
+      border-color: #53b5b1; 
+    }
+
+    .stage3 .pin { background-image: url("/shark.png"); }
+    .stage3 .pinLine { 
+      border-color: #d76931; 
+    }
+
+    .stage4 .pin { background-image: url("/whale_tail.png"); }
+    .stage4 .pinLine {
+       border-color: #53b5b1; 
+    }
+
+    .stage5 .pin { background-image: url("/whale.png"); }
+    .stage5 .pinLine {
+       border-color: #d76931;
+    }
+    
+
 
     .section .pin {
       position: absolute;
@@ -188,6 +230,7 @@
         transition-delay: 0.4s;
     }
 
+    /*
     .stage1 .pin { background-image: url("/octopus.png"); }
     .pinLine { 
       border-color: #5393b5; 
@@ -213,4 +256,5 @@
     .stage5 .pinLine {
        border-color: #d76931;
     }
+    */
     
