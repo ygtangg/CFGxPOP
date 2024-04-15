@@ -10,122 +10,49 @@ Attributed to Kelly Tang :)
 // magic number of the number of sections; adjust accordingly
 
 export default function Home() {
-
-  /*
-    const tlContents = Array.from(document.getElementsByClassName('content'));
-    const tlSections = Array.from(document.getElementsByClassName('section'));
-    const n = tlContents.length;
-  */
-
-    const hoverSection = (hoverIndex) => {
-      const tlContents = Array.from(document.getElementsByClassName('content'));
-      console.log(tlContents)
-      let oldIndex = tlContents[hoverIndex].getAttribute("hover_index");
-      if (oldIndex !== hoverIndex) {
-        const n = tlContents.length;
-        const W = 0.65;
-        let offset = 0;
-        for (let i = 0; i < n; i++) {
-          tlContents[i].setAttribute("hover_index", hoverIndex);
-          if (i === hoverIndex) {
-            tlContents[i].style.left = (1 + offset) * -100 * W * i / (n + W) + "%";
-          } else if (i <= hoverIndex) {
-            tlContents[i].style.left = -100 * W * i / (n + W) + "%";
-          } else {
-            tlContents[i].style.left = 100 * ((n - i) * W / (n + W)) + "%";
-          }
-        }
-      }
-    };
-
-    const leaveSection = (hoverIndex) => {
-      const tlContents = Array.from(document.getElementsByClassName('content'));
-      const oldIndex = tlContents[hoverIndex].getAttribute("hover_index");
-      if (oldIndex !== null) {
-        for (let i = 0; i < n - 1; i++) {
-          tlContents[i].setAttribute("hover_index", null);
-          tlContents[i].style.left = 0;
-        }
-      }
-    };
-
-  /* 
+  const contentRef = useRef(null);
   useEffect(() => {
-  const tlContents = document.getElementsByClassName('content');
-  const tlSections = document.getElementsByClassName('section');
-  const n = tlContents.length;
+    const tlContents = document.getElementsByClassName(styles.content);
+    const tlSections = document.getElementsByClassName(styles.section);
+    const n = tlContents.length;
+
+    function hoverSection(hover_index) {
+      let old_index = tlContents[hover_index].getAttribute("hover_index")
+      if(old_index != hover_index) {
+          let W = 0.65
+          let offset = 0
+          for ( i = 0; i < n - 1; i++ ) {
+              tlContents[i].setAttribute("hover_index", hover_index)
+              if(i == hover_index) {
+                  tlContents[i].style.left = (1 + offset) * -100 * W * i / (n+W) + "%";
+              } else if(i <= hover_index) {
+                  tlContents[i].style.left = -100*W*i/(5+W) + "%";
+              } else {
+                  tlContents[i].style.left = 100*((n-i)*W/(n + W)) + "%"
+              }
+          }
+      }
+    }
+        
+    function leaveSection(hover_index) {
+      let old_index = tlContents[hover_index].getAttribute("hover_index")
+      if(old_index != null) {
+          for (var i = 0; i < n; i++ ) { // before, up to "4"
+              tlContents[i].setAttribute("hover_index", null);
+              tlContents[i].style.left = 0;
+          }
+      }
+    }
+
+    for (var i = 0; i < n; i++ ) {
+      ((i) => {
+          tlContents[i].setAttribute("hover_index", null)
+          tlSections[i].addEventListener("mouseover", () => hoverSection(i))
+          tlSections[i].addEventListener("mouseleave", () => leaveSection(i))
+      })(i)
+    }
   })
 
-  const [hoverIndex, setHoverIndex] = useState(null);
-  const handleMouseOver = (index) => {
-    setHoverIndex(index);
-    let oldIndex = tlContents[hoverIndex].getAttribute("hover_index");
-      if (oldIndex !== hoverIndex) {
-        const n = tlContents.length;
-        const W = 0.65;
-        let offset = 0;
-        for (let i = 0; i < n; i++) {
-          tlContents[i].setAttribute("hover_index", hoverIndex);
-          if (i === hoverIndex) {
-            tlContents[i].style.left = (1 + offset) * -100 * W * i / (n + W) + "%";
-          } else if (i <= hoverIndex) {
-            tlContents[i].style.left = -100 * W * i / (n + W) + "%";
-          } else {
-            tlContents[i].style.left = 100 * ((n - i) * W / (n + W)) + "%";
-          }
-        }
-      }
-  };
-
-  const handleMouseLeave = () => {
-    setHoverIndex(null);
-    const oldIndex = tlContents[hoverIndex].getAttribute("hover_index");
-      if (oldIndex !== null) {
-        for (let i = 0; i < n - 1; i++) {
-          tlContents[i].setAttribute("hover_index", null);
-          tlContents[i].style.left = 0;
-        }
-      }
-  };
-
-
-  /*
-    const tlContents = useRef(null);
-    const [hoverIndex, setHoverIndex] = useState(null);
-    
-    const handleMouseOver = useCallback((index) => {
-      setHoverIndex(index);
-      const contents = tlContents.current.children;
-      const n = contents.length;
-      const W = 0.65;
-  
-      let oldIndex = contents[index]?.getAttribute("hover_index");
-      if (oldIndex !== index.toString()) {
-        let offset = 0;
-        for (let i = 0; i < n; i++) {
-          contents[i].setAttribute("hover_index", index.toString());
-          if (i === index) {
-            contents[i].style.left = `${(1 + offset) * -100 * W * i / (n + W)}%`;
-          } else if (i <= index) {
-            contents[i].style.left = `${-100 * W * i / (n + W)}%`;
-          } else {
-            contents[i].style.left = `${100 * ((n - i) * W / (n + W))}%`;
-          }
-        }
-      }
-    }, []);
-  
-    const handleMouseLeave = useCallback(() => {
-      setHoverIndex(null);
-      const contents = tlContents.current.children;
-      const n = contents.length;
-  
-      for (let i = 0; i < n; i++) {
-        contents[i].setAttribute("hover_index", null);
-        contents[i].style.left = '0';
-      }
-    }, []);
-*/
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -149,9 +76,7 @@ export default function Home() {
         <div className={styles.bottomLine}></div>
         <div className={styles.section} style={{'--tl-pos': 1}}>
           <div className={styles.stage1}>
-            <div className={styles.content} 
-                 onMouseOver={() => hoverSection(0)}
-                 onMouseLeave={() => leaveSection(0)}>
+            <div className={styles.content} ref={contentRef}>
               <div className={styles.pinLine}></div>
               <div className={styles.pinLineCover}></div>
               <div className={styles.pin}></div>
@@ -160,9 +85,11 @@ export default function Home() {
               <div className={styles.sectionText}>
                 <h1>Outreach</h1>
                 <p>
-                  First, we reach out to nonprofit and humanitarian
-                  organizations, and work with them to find projects that best
-                  help them achieve their goals.
+                Am no an listening depending up believing. Enough around 
+                remove to barton agreed regret in or it. Advantage mr estimable 
+                be commanded provision. Year well shot deny shew come now had. 
+                Shall downs stand marry taken his for out. Do related mr account 
+                brandon an up.  
                 </p>
               </div>
             </div>
@@ -179,9 +106,11 @@ export default function Home() {
             <div className={styles.sectionText}>
               <h1>Matching</h1>
               <p>
-                We match each CFG developer with a compatible project team, with
-                an eye toward balancing experience levels and enthusiasm for the
-                nonprofit’s cause.
+                Am no an listening depending up believing. Enough around 
+                remove to barton agreed regret in or it. Advantage mr estimable 
+                be commanded provision. Year well shot deny shew come now had. 
+                Shall downs stand marry taken his for out. Do related mr account 
+                brandon an up. 
               </p>
             </div>
             </div>
@@ -198,9 +127,11 @@ export default function Home() {
             <div className={styles.sectionText}>
               <h1>Design</h1>
               <p>
-                Each group plans out and designs all aspects of the project,
-                building a visual prototype to incorporate feedback from the
-                organization.
+                Am no an listening depending up believing. Enough around 
+                remove to barton agreed regret in or it. Advantage mr estimable 
+                be commanded provision. Year well shot deny shew come now had. 
+                Shall downs stand marry taken his for out. Do related mr account 
+                brandon an up. 
               </p>
             </div>
             </div>
@@ -217,9 +148,11 @@ export default function Home() {
             <div className={styles.sectionText}>
               <h1>Build</h1>
               <p>
-                Developers work towards their projects with productive weekly
-                meetings and tasks. Teams discuss their progress with the whole
-                club in general meetings.
+                Am no an listening depending up believing. Enough around 
+                remove to barton agreed regret in or it. Advantage mr estimable 
+                be commanded provision. Year well shot deny shew come now had. 
+                Shall downs stand marry taken his for out. Do related mr account 
+                brandon an up. 
               </p>
             </div>
             </div>
@@ -236,8 +169,11 @@ export default function Home() {
             <div className={styles.sectionText}>
               <h1>Finalize</h1>
               <p>
-                Finally, teams can make any requested adjustments and ensure the
-                project is polished before shipping it to the organizations.
+                Am no an listening depending up believing. Enough around 
+                remove to barton agreed regret in or it. Advantage mr estimable 
+                be commanded provision. Year well shot deny shew come now had. 
+                Shall downs stand marry taken his for out. Do related mr account 
+                brandon an up.
               </p>
             </div>
             </div>
