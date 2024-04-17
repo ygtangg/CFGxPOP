@@ -102,9 +102,9 @@ export default function Home() {
             <div className={styles.pinLineCover}></div>
             <div className={styles.pin}></div>
             <div className={styles.dot}></div>
-            <p className={styles.sectionTitle}>Matching</p>
+            <p className={styles.sectionTitle}>Design</p>
             <div className={styles.sectionText}>
-              <h1>Matching</h1>
+              <h1>Design</h1>
               <p>
                 Am no an listening depending up believing. Enough around 
                 remove to barton agreed regret in or it. Advantage mr estimable 
@@ -123,9 +123,9 @@ export default function Home() {
             <div className={styles.pinLineCover}></div>
             <div className={styles.pin}></div>
             <div className={styles.dot}></div>
-            <p className={styles.sectionTitle}>Design</p>
+            <p className={styles.sectionTitle}>Film</p>
             <div className={styles.sectionText}>
-              <h1>Design</h1>
+              <h1>Film</h1>
               <p>
                 Am no an listening depending up believing. Enough around 
                 remove to barton agreed regret in or it. Advantage mr estimable 
@@ -165,9 +165,9 @@ export default function Home() {
             <div className={styles.pinLineCover}></div>
             <div className={styles.pin}></div>
             <div className={styles.dot}></div>
-            <p className={styles.sectionTitle}>Finalize</p>
+            <p className={styles.sectionTitle}>Show</p>
             <div className={styles.sectionText}>
-              <h1>Finalize</h1>
+              <h1>Show</h1>
               <p>
                 Am no an listening depending up believing. Enough around 
                 remove to barton agreed regret in or it. Advantage mr estimable 
@@ -180,13 +180,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-             
-        <div className= {styles.centerTexts}>
-          <h2 className={styles.subtitle}>Thanks to All Our Sponsors! </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+      <div className= {styles.centerTexts}>
+        <h2 className={styles.subtitle}>Thanks to All Our Sponsors! </h2>
+        
+      </div>       
+      <div className= {styles.centerTexts}>
+        <h2 className={styles.subtitle}> Accepted Film Festival Images </h2>
+        <p>Here is a list of film festival images our documentary is accepted into</p>
+      </div>
 
-        <div className={styles.imageContainer}>
+        <div className={styles.gridContainer}>
+          <div class={styles.gridItem}> 
+            <img src='/film_festival_pic/laurel_7th.png' className={styles.backgroundImage}></img>
+          </div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
           <img src='/plastic_ocean_sponsors.png' className={styles.backgroundImage}></img>
         </div>
         
