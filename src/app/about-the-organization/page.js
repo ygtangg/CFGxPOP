@@ -33,7 +33,7 @@ function ImageButton() {
   }
   return (
     <div className={styles.imageContainer}>
-      <ImageChange />
+      <ImageChange/>
       <div className={styles.overlay}>
         <div className={styles.leftButton}>
           <button onClick={handleDecrement} className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} /></button>
@@ -41,13 +41,7 @@ function ImageButton() {
         <div className={styles.middleText}>
           <img src="POP logo.png"></img>
           <h1>Plastic Ocean Project</h1>
-          <h3>"This environmental organization is a favorite of mine,</h3>
-          <h3>not only because of the importance of its mission and</h3>
-          <h3>the passion of its leaders, but also because the culture</h3>
-          <h3>of the organization is to try to support other worthy</h3>
-          <h3>environmental organizations. So it is the exact opposite</h3>
-          <h3>of too many silo environmental organizations." - Jack Spruill,</h3>
-          <h3>Spruill Farm Conservation Project</h3>
+          <h3>"This environmental organization is a favorite of mine, not only because of the importance of its mission and the passion of its leaders, but also because the culture of the organization is to try to support other worthy environmental organizations. So it is the exact opposite of too many silo environmental organizations." - Jack Spruill, Spruill Farm Conservation Project</h3>
         </div>
         <div className={styles.rightButton}>
           <button onClick={handleIncrement} className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton} /></button>
