@@ -3,20 +3,15 @@
   height: 25vw;
   display: block;
 }
-
-
-
 .imageContainer {
   position: relative;
 }
-  
 /* main image */
 .backgroundImage {
-  width: 100vw;
+  width: 100%;
   height: 25vw;
   display: block;
 }
-  
 .overlay {
     position: absolute;
     top: 0;
@@ -25,36 +20,28 @@
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.257) 0%, rgba(0, 0, 0, 0.706) 100%); /* Adjust gradient as needed */
   }
-  
   .title {
     position: absolute;
     top: 40%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 6.5vw;
-    text-align: center; 
+    text-align: center;
     white-space: nowrap;
   }
-  
   .mainTexts {
     margin-top: 20px;
     left: 0;
     padding-left: 20px;
     text-align: left;
     margin-bottom: 20px; /* Add margin to the bottom */
-
   }
-
   .centerTexts {
     margin-bottom: 20px; /* Add margin to the bottom */
     margin-top: 30px;
     text-align: center; /* Center text within this specific container */
     }
-
-  
-  
     /* Slidebar CSS Portion:
-
       1. section
       2. content
       3. pinLine
@@ -64,7 +51,6 @@
       7. sectionTitle
       8. sectionText
     */
-  
     /* section css code */
     .timeline {
       position: relative;
@@ -72,14 +58,12 @@
       aspect-ratio: 7/2;
       margin: 0% 0% 5%;
     }
-
     .timeline .section {
       position: absolute;
       width: 20%;
       height: 100%;
       left: calc((var(--tl-pos) - 1) * 20%);
     }
-
     .timeline .content {
       position: absolute;
       bottom: 20%;
@@ -88,34 +72,26 @@
       width: 100%;
       transition: left 0.5s ease;
     }
-
-
     .stage1 .pin { background-image: url("/octopus.png"); }
-    .pinLine { 
-      border-color: #5393b5; 
+    .pinLine {
+      border-color: #5393B5;
     }
-     
-    
     .stage2 .pin { background-image: url("/penguin.png"); }
-    .stage2 .pinLine { 
-      border-color: #53b5b1; 
+    .stage2 .pinLine {
+      border-color: #53B5B1;
     }
-
     .stage3 .pin { background-image: url("/shark.png"); }
-    .stage3 .pinLine { 
-      border-color: #d76931; 
+    .stage3 .pinLine {
+      border-color: #D76931;
     }
-
     .stage4 .pin { background-image: url("/whale_tail.png"); }
     .stage4 .pinLine {
-       border-color: #53b5b1; 
+       border-color: #53B5B1;
     }
-
     .stage5 .pin { background-image: url("/whale.png"); }
     .stage5 .pinLine {
-       border-color: #d76931;
+       border-color: #D76931;
     }
-    
     .section .pin {
       position: absolute;
       height: 25%;
@@ -127,11 +103,9 @@
       background-size: contain;
       transition: top 0.5s ease;
     }
-
     .section:hover .pin {
         top: 20%;
     }
-
     .section .pinLine {
         position: absolute;
         width: 0px;
@@ -141,21 +115,18 @@
         border-style: none dashed none none;
         border-width: 0.4vw;
     }
-
     .section .pinLineCover {
         position: absolute;
         width: 4%;
-        left: 48%;  
+        left: 48%;
         height: 45%;
         top: 25%;
         background-color: black;
         transition: height 0.5s ease;
     }
-
     .section:hover .pinLineCover {
         height: 0%;
     }
-
     .section .dot {
         position: absolute;
         bottom: 0%;
@@ -165,7 +136,6 @@
         background-color: white;
         border-radius: 50%;
     }
-
     .bottomLine {
         position: absolute;
         width: 80%;
@@ -175,7 +145,6 @@
         border-radius: 100px;
         background-color: white;
     }
-
   .sectionTitle {
     position: absolute;
     left: 50%;
@@ -187,12 +156,10 @@
     transition: opacity 0.5s ease;
     transition-delay: 0.4s;
   }
-
   .section:hover .sectionTitle {
     opacity: 0;
     transition-delay: 0.1s;
   }
-
   .sectionText {
     position: relative;
     left: 65%;
@@ -203,38 +170,54 @@
     transition-delay: 0;
     font-family: "Source Sans Pro";
   }
-
   .stage5 .sectionText {
     left: -65%;
   }
-
   .sectionText p {
     font-weight: 400;
     font-size: 1.4vw;
   }
-
   .sectionText h1 {
     font-weight: 700;
     font-size: 3vw;
   }
-
   .section:hover .sectionText {
     opacity: 1;
     transition-delay: 0.4s;
   }
-
     /* Film festivals */
   .gridContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    background-color: #2196F3;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-gap: 10px;
+    background-color: transparent;
     padding: 10px;
+    align-items: stretch;
   }
-
   .gridItem {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridItem img {
+    background-color: transparent;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
+  .backgroundImage {
+    width: 100%; /* This will make the image take the full width of its parent container */
+    height: auto; /* This will scale the height while maintaining the aspect ratio */
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.257) 0%, rgba(0, 0, 0, 0.706) 100%); /* Adjust gradient as needed */
+}
