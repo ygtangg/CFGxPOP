@@ -19,17 +19,17 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <div class={styles.imageContainer}>
+        <div className={styles.imageContainer}>
           <picture>
             <img src='/Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
-          <div class={styles.overlay}></div>
-          <h1 class={styles.title}>Support Our Mission</h1>
-          <div class={styles.buttonContainer}>
-            <button onClick={() => scrollToElement('donate')} class={styles.button}>Donate</button>
-            <button onClick={() => scrollToElement('volunteer')} class={styles.button}>Volunteer</button>
-            <button onClick={() => scrollToElement('sponsor')} class={styles.button}>Sponsor</button>
-            <button onClick={() => scrollToElement('screening')} class={styles.button} >Screenings</button>
+          <div className={styles.overlay}></div>
+          <h1 className={styles.title}>Support Our Mission</h1>
+          <div className={styles.buttonContainer}>
+            <button onClick={() => scrollToElement('donate')} className={styles.button}>Donate</button>
+            <button onClick={() => scrollToElement('volunteer')} className={styles.button}>Volunteer</button>
+            <button onClick={() => scrollToElement('sponsor')} className={styles.button}>Sponsor</button>
+            <button onClick={() => scrollToElement('screening')} className={styles.button} >Screenings</button>
           </div>
         </div>
         <div className={styles.bodyContainer}>

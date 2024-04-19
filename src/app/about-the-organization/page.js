@@ -11,6 +11,25 @@ function ImageButton() {
   function handleDecrement() {
     setindex((index + 3) % 4);
   }
+
+  // var intervalID = window.setInterval(myCallback, 3000);
+  // function myCallback() {
+  //   setindex((index + 1) % 4);
+  // }
+
+  function preloadImage() {
+    var img;
+
+    img=new Image();
+    img.src="Screen Shot 2023-06-30 at 7.24.43 AM.png";
+
+    img=new Image();
+    img.src="otter_1.jpg";
+
+    img=new Image();
+    img.src="dolphin_1.jpg";
+  }
+
   function ImageChange() {
     if (index === 0) {
       return (
@@ -31,20 +50,22 @@ function ImageButton() {
       <img src="dolphin_1.jpg" className={styles.backgroundImage}></img>
     );
   }
+  
+  preloadImage()
   return (
     <div className={styles.imageContainer}>
       <ImageChange/>
       <div className={styles.overlay}>
-        <div className={styles.leftButton}>
-          <button onClick={handleDecrement} className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} /></button>
+        <div className={styles.leftButton} onClick={handleDecrement}>
+          <div className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} /></div>
         </div>
         <div className={styles.middleText}>
-          <img src="POP logo.png"></img>
+          <img src="POP logo.png" className={styles.logo}></img>
           <h1>Plastic Ocean Project</h1>
-          <h3>"This environmental organization is a favorite of mine, not only because of the importance of its mission and the passion of its leaders, but also because the culture of the organization is to try to support other worthy environmental organizations. So it is the exact opposite of too many silo environmental organizations." - Jack Spruill, Spruill Farm Conservation Project</h3>
+          <p>"This environmental organization is a favorite of mine, not only because of the importance of its mission and the passion of its leaders, but also because the culture of the organization is to try to support other worthy environmental organizations. So it is the exact opposite of too many silo environmental organizations." - Jack Spruill, Spruill Farm Conservation Project</p>
         </div>
-        <div className={styles.rightButton}>
-          <button onClick={handleIncrement} className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton} /></button>
+        <div className={styles.rightButton} onClick={handleIncrement}>
+          <div className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton} /></div>
         </div>
       </div>
     </div>
