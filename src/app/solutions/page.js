@@ -34,13 +34,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <div class={styles.imageContainer}>
+        <div className={styles.imageContainer}>
           <picture>
             <img src='\Bonnie with newborn whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
-          <div class={styles.overlay}></div>
-          <div class={styles.titleDiv}>
-            <h1 class={styles.title}>Solutions</h1>
+          <div className={styles.overlay}></div>
+          <div className={styles.titleDiv}>
+            <h1 className={styles.title}>Solutions</h1>
           </div>
         </div>
       </div>
