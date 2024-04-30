@@ -17,18 +17,25 @@ function ImageButton() {
   //   setindex((index + 1) % 4);
   // }
 
-  function preloadImage() {
-    var img;
+  function preloadImages() {
+    var images = []; // Array to store image objects
 
-    img=new Image();
-    img.src="Screen Shot 2023-06-30 at 7.24.43 AM.png";
+    // Create image objects and set their src properties
+    var img1 = new Image();
+    img1.src = "Screen Shot 2023-06-30 at 7.24.43 AM.png";
+    images.push(img1); // Add image object to the array
 
-    img=new Image();
-    img.src="otter_1.jpg";
+    var img2 = new Image();
+    img2.src = "otter_1.jpg";
+    images.push(img2); // Add image object to the array
 
-    img=new Image();
-    img.src="dolphin_1.jpg";
-  }
+    var img3 = new Image();
+    img3.src = "dolphin_1.jpg";
+    images.push(img3); // Add image object to the array
+
+    // Return the array of preloaded images
+    return images;
+}
 
   function ImageChange() {
     if (index === 0) {
@@ -51,7 +58,7 @@ function ImageButton() {
     );
   }
   
-  preloadImage()
+  preloadImages()
   return (
     <div className={styles.imageContainer}>
       <ImageChange/>
