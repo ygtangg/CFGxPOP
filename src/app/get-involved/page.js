@@ -45,11 +45,11 @@ export default function Home() {
               </div>
               <div className={styles.mainTexts} id='sponsor'>
                 <h2 className={styles.subTitle}>Sponsor Us</h2>
-                <p>If you're part of an organization or company looking to help make a difference, reach out to us about sponsorship opportunities! The film and all of the organizations who helped create it are looking for sponsors and would love to collaborate with you on current and future projects.</p>
+                <p>If you are part of an organization or company looking to help make a difference, reach out to us about sponsorship opportunities! The film and all of the organizations who helped create it are looking for sponsors and would love to collaborate with you on current and future projects.</p>
               </div>
               <div className={styles.mainTexts} id='screening'>
                 <h2 className={styles.subTitle}>Organize Screenings</h2>
-                <p>One of the ways we reach out to the community is through setting up physical screenings in the area. Whether it's in a movie theater, film festival, or other event, showing people how they can make a difference helps inspire everyone to help change the world for the better.</p>
+                <p>One of the ways we reach out to the community is through setting up physical screenings in the area. Whether in a movie theater, film festival, or other event, showing people how they can make a difference helps inspire everyone to help change the world for the better.</p>
               </div>
             </div>
             <div className={styles.logos}>
