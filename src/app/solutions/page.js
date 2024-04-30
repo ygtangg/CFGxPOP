@@ -36,7 +36,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
           <picture>
-            <img src='\Bonnie with newborn whale 356.jpg' className={styles.backgroundImage} alt=""></img>
+            <img src='\Bonnie with newborn whale 356.jpg'  alt="Picture of Bonnie Monteleone with a newborn whale" className={styles.backgroundImage}></img>
           </picture>
           <div className={styles.overlay}></div>
           <div className={styles.titleDiv}>
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <animated.div className={styles.leftPerson} style={introAnimation}>
         <div className={styles.leftPersonImg}>
-          <img src="dr-sylvia-earle.jpg" style={{height:200,width:200}}></img>
+          <img src="dr-sylvia-earle.jpg" alt="Picture of Dr. Sylvia Earle" style={{height:200,width:200}}></img>
         </div>
         <div className={styles.leftPersonText}>
           <h1>Dr. Sylvia Earle</h1>
@@ -61,12 +61,12 @@ export default function Home() {
           <p><i>'"It is said that where there's life there's hope, and so no place can inspire us with more hopefulness than that great, life-making sea -that singular, wondrous ocean covering the blue planet."</i></p>
         </div>
         <div className={styles.rightPersonImg}>
-          <img src="/dr-carl-safina.jpg" style={{height:200,width:200}}></img>
+          <img src="/dr-carl-safina.jpg"  alt="Picture of Dr. Carl Safina"style={{height:200,width:200}}></img>
         </div>
       </animated.div>
       <animated.div className={styles.leftPerson} style={introAnimation}>
         <div className={styles.leftPersonImg}>
-          <img src="/paul-watson.jpg" style={{height:200,width:200}}></img>
+          <img src="/paul-watson.jpg"  alt="Picture of Paul Watson"  style={{height:200,width:200}}></img>
         </div>
         <div className={styles.leftPersonText}>
           <h1>Paul Watson</h1>
@@ -81,12 +81,12 @@ export default function Home() {
           <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum ultricies nisl, vel mattis erat sollicitudin quis. Cras euismod tellus eget quam pharetra imperdiet sed sit amet lacus. Curabitur tincidunt arcu nec eleifend gravida.</i></p>
         </div>
         <div className={styles.rightPersonImg}>
-          <img src="/ralph-chami.jpg" style={{height:200,width:200}}></img>
+          <img src="/ralph-chami.jpg" alt="Picture of Ralph Chami" style={{height:200,width:200}}></img>
         </div>
       </animated.div>
       <animated.div className={styles.leftPerson} style={introAnimation}>
         <div className={styles.leftPersonImg}>
-          <img src="/dr-michael-moore.jpg" style={{height:200,width:200}}></img>
+          <img src="/dr-michael-moore.jpg"  alt="Picture of Dr. Michael Moore" style={{height:200,width:200}}></img>
         </div>
         <div className={styles.leftPersonText}>
           <h1>Dr. Michael Moore</h1>

@@ -54,9 +54,9 @@ export default function Home() {
             </div>
             <div className={styles.logos}>
               <p>many organization logos would go here and link to their websites</p>
-              <a href="https://plasticoceanproject.org"><img src='/circular_logo.png'></img></a>
-              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='\CFGLogoClear.png'></img></a>
-              <a href="https://google.com"><img src='/emptypfp.png'></img></a>
+              <a href="https://plasticoceanproject.org"><img src='/circular_logo.png' alt=""></img></a>
+              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='\CFGLogoClear.png' alt=""></img></a>
+              <a href="https://google.com"><img src='/emptypfp.png' alt=""></img></a>
             </div>
           </div>
         </div>

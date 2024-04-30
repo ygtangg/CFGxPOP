@@ -33,21 +33,21 @@ function ImageButton() {
   function ImageChange() {
     if (index === 0) {
       return (
-        <img src="whale_1.jpg" className={styles.backgroundImage}></img>
+        <img src="whale_1.jpg" className={styles.backgroundImage} alt=""></img>
       );
     }
     else if (index === 1) {
       return (
-        <img src="Screen Shot 2023-06-30 at 7.24.43 AM.png" className={styles.backgroundImage}></img>
+        <img src="Screen Shot 2023-06-30 at 7.24.43 AM.png" className={styles.backgroundImage} alt=""></img>
       );
     }
     else if (index === 2) {
       return (
-        <img src="otter_1.jpg" className={styles.backgroundImage}></img>
+        <img src="otter_1.jpg" className={styles.backgroundImage} alt=""></img>
       );
     }
     return (
-      <img src="dolphin_1.jpg" className={styles.backgroundImage}></img>
+      <img src="dolphin_1.jpg" className={styles.backgroundImage} alt=""></img>
     );
   }
   
@@ -60,7 +60,7 @@ function ImageButton() {
           <div className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} /></div>
         </div>
         <div className={styles.middleText}>
-          <img src="POP logo.png" className={styles.logo}></img>
+          <img src="POP logo.png" className={styles.logo} alt=""></img>
           <h1>Plastic Ocean Project</h1>
           <p>"This environmental organization is a favorite of mine, not only because of the importance of its mission and the passion of its leaders, but also because the culture of the organization is to try to support other worthy environmental organizations. So it is the exact opposite of too many silo environmental organizations." - Jack Spruill, Spruill Farm Conservation Project</p>
         </div>
@@ -79,7 +79,7 @@ export default function Profile() {
           <h1>This was a {"\n"} GIANT collaboration</h1>
           <h3>We would like to thank... for sponsoring this project. {"\n"} Without you guys, we would not be able to...</h3>
         </div>
-        <img src='uncw-marine-mammal-lab.jpg' className={styles.rightImage}></img>
+        <img src='uncw-marine-mammal-lab.jpg' className={styles.rightImage} alt=""></img>
       </div>
       <ImageButton />
     </div>
