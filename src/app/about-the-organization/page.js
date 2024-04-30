@@ -57,7 +57,7 @@ function ImageButton() {
       <ImageChange/>
       <div className={styles.overlay}>
         <div className={styles.leftButton} onClick={handleDecrement}>
-          <div className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} /></div>
+          <div className={styles.transparentButton}><img src='/arrow_left.png' className={styles.imageButton} alt=""></img></div>
         </div>
         <div className={styles.middleText}>
           <img src="POP logo.png" className={styles.logo} alt=""></img>
@@ -65,7 +65,7 @@ function ImageButton() {
           <p>&quot;This environmental organization is a favorite of mine, not only because of the importance of its mission and the passion of its leaders, but also because the culture of the organization is to try to support other worthy environmental organizations. So it is the exact opposite of too many silo environmental organizations.&quot; - Jack Spruill, Spruill Farm Conservation Project</p>
         </div>
         <div className={styles.rightButton} onClick={handleIncrement}>
-          <div className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton} /></div>
+          <div className={styles.transparentButton}><img src='/arrow_right.png' className={styles.imageButton} alt=""/></div>
         </div>
       </div>
     </div>

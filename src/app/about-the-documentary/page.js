@@ -52,7 +52,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
         <picture>
-          <img src='/Aerial of whale 356.jpg' className={styles.backgroundImage}></img>
+          <img src='/Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
           <div className={styles.overlay}> </div>
           <h1 className={styles.title}>All of us are listening. <br/>
