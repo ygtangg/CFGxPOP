@@ -51,14 +51,14 @@ export default function Home() {
         <div className={styles.leftPersonText}>
           <h1>Dr. Sylvia Earle</h1>
           <p>Marine Biologist, Ocean Explorer & Advocate</p>
-          <p><i>&quot;It's a dangerous place to be a sea creature today. But because the problems originate with us, we are the source of solutions.&quot;</i></p>
+          <p><i>&quot;It&apos;s a dangerous place to be a sea creature today. But because the problems originate with us, we are the source of solutions.&quot;</i></p>
         </div>
       </animated.div>
       <animated.div className={styles.rightPerson} style={introAnimation}>
         <div className={styles.rightPersonText}>
           <h1>Dr. Carl Safina</h1>
           <p>Ecologist & Author</p>
-          <p><i>&quot;It is said that where there's life there's hope, and so no place can inspire us with more hopefulness than that great, life-making sea -that singular, wondrous ocean covering the blue planet.&quot;</i></p>
+          <p><i>&quot;It is said that where there&apos;s life there&apos;s hope, and so no place can inspire us with more hopefulness than that great, life-making sea -that singular, wondrous ocean covering the blue planet.&quot;</i></p>
         </div>
         <div className={styles.rightPersonImg}>
           <img src="/dr-carl-safina.jpg"  alt="Picture of Dr. Carl Safina"style={{height:200,width:200}}></img>
