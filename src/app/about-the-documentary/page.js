@@ -1,6 +1,6 @@
 "use client";
 import styles from "./page.module.css";
-import { useEffect, useState, useRef, useCallback} from 'react';
+import { useEffect, useRef} from 'react';
 // <script src="jquery.min.js"></script>
 /* SECTION 1: Barebone of the webpage 
 Attributed to Kelly Tang :)

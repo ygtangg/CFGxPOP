@@ -1,13 +1,13 @@
 "use client";
 import styles from "./page.module.css";
 import { animateScroll } from 'react-scroll';
-import { useState, useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   // Function to handle smooth scroll
   const scrollToElement = (elementId) => {
     animateScroll.scrollTo(document.getElementById(elementId).offsetTop, {

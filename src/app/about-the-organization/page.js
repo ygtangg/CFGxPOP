@@ -1,7 +1,32 @@
-"use client"
+"use client";
+
 import React from 'react';
-import { useState } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel'; 
+
+// import { useState } from 'react';
 import styles from "./page.module.css";
+
+export default function Home() {
+  return (
+    <><div className={styles.topPage}>
+      <div className={styles.leftText}>
+        <h1>This was a {"\n"} GIANT collaboration</h1>
+        <h3>We would like to thank... for sponsoring this project. {"\n"} Without you guys, we would not be able to...</h3>
+      </div>
+      <img src='uncw-marine-mammal-lab.jpg' className={styles.rightImage} alt=""></img>
+    </div><div>
+        <h2>Plastic Ocean Project</h2>
+        <Carousel>
+          <div>
+            <img src="/otter_1.png" alt="image1" />
+          </div>
+        </Carousel>
+      </div></>
+  );
+}
+
+/*
 import Image from 'next/image';
 // Edward Zhang
 function ImageButton() {
@@ -79,6 +104,7 @@ function ImageButton() {
     </div>
   );
 }
+
 export default function Profile() {
   return (
     <div>
@@ -93,3 +119,4 @@ export default function Profile() {
     </div>
   );
 }
+*/
