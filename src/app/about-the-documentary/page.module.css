@@ -72,23 +72,23 @@
       width: 100%;
       transition: left 0.5s ease;
     }
-    .stage1 .pin { background-image: url("/octopus.png"); }
+    .stage1 .pin { background-image: url("/CFGxPOP/octopus.png"); }
     .pinLine {
       border-color: #5393B5;
     }
-    .stage2 .pin { background-image: url("/penguin.png"); }
+    .stage2 .pin { background-image: url("/CFGxPOP/penguin.png"); }
     .stage2 .pinLine {
       border-color: #53B5B1;
     }
-    .stage3 .pin { background-image: url("/shark.png"); }
+    .stage3 .pin { background-image: url("/CFGxPOP/shark.png"); }
     .stage3 .pinLine {
       border-color: #D76931;
     }
-    .stage4 .pin { background-image: url("/whale_tail.png"); }
+    .stage4 .pin { background-image: url("/CFGxPOP/whale_tail.png"); }
     .stage4 .pinLine {
        border-color: #53B5B1;
     }
-    .stage5 .pin { background-image: url("/whale.png"); }
+    .stage5 .pin { background-image: url("/CFGxPOP/whale.png"); }
     .stage5 .pinLine {
        border-color: #D76931;
     }

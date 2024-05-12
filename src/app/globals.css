@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'Jura Bold';
-  src: url('/jura/JuraDemiBold.ttf') format('truetype');
-  /* Add additional font properties as needed */
+  src: url('/CFGxPOP/jura/JuraDemiBold.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Jura Regular';
-  src: url('/jura/JuraLight.ttf') format('truetype');
-  /* Add additional font properties as needed */
+  src: url('/CFGxPOP/jura/JuraLight.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Forum';
-  src: url('/forum/Forum-Regular.otf') format('truetype');
-  /* Add additional font properties as needed */
+  src: url('/CFGxPOP/forum/Forum-Regular.otf') format('truetype');
 }
 
 :root {
