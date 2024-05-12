@@ -52,7 +52,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
         <picture>
-          <img src='/Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
+          <img src='Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
           <div className={styles.overlay}> </div>
           <h1 className={styles.title}>All of us are listening. <br/>
@@ -190,51 +190,51 @@ export default function Home() {
 
         <div className={styles.gridContainer}>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/laurel_7th.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/laurel_7th.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/indigo_moon.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/indigo_moon.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/ny_tri_state_laurel.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/ny_tri_state_laurel.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}>
-              <img src='/film_festival_pic/official_selection.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/official_selection.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/tokyo_official.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/tokyo_official.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/vero_beach.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/vero_beach.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/vila_real_portugal.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/vila_real_portugal.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/longleaf_film_festival.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/longleaf_film_festival.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/monich_new_wave.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/monich_new_wave.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/near_nazareth_festival_laurel.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/near_nazareth_festival_laurel.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/circular_logo.png' className={styles.backgroundImage}alt=""></img>
+              <img src='circular_logo.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/raleigh_film_art_festival.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/raleigh_film_art_festival.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/roma_official_selection.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/roma_official_selection.png' className={styles.backgroundImage}alt=""></img>
             </div>
             <div class={styles.gridItem}> 
-              <img src='/film_festival_pic/rome_women.png' className={styles.backgroundImage}alt=""></img>
+              <img src='film_festival_pic/rome_women.png' className={styles.backgroundImage}alt=""></img>
             </div>
         </div>
 
         <div>
-            <img src='/plastic_ocean_sponsors.png' className={styles.backgroundImage}alt=""></img>
+            <img src='plastic_ocean_sponsors.png' className={styles.backgroundImage}alt=""></img>
         </div>
       </div>
     </main>

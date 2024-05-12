@@ -19,7 +19,7 @@ export default function Home() {
         <h2>Plastic Ocean Project</h2>
         <Carousel>
           <div>
-            <img src="/otter_1.png" alt="image1" />
+            <img src="otter_1.jpg" alt="image1" />
           </div>
         </Carousel>
       </div></>

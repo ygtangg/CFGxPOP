@@ -60,7 +60,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className='trailer'>
           <video width="100%" autoPlay muted controls alt="Documentary Trailer">
-            <source src="\356_trailer__2160p__730.mp4" type="video/mp4" />
+            <source src="356_trailer__2160p__730.mp4" type="video/mp4" />
           </video>
         </div>
         <div className={styles.title}>
@@ -70,10 +70,10 @@ export default function Home() {
         <animated.div className={styles.intro} style={introAnimation}>
           <p><i>If the Ocean Could Talk</i> is a documentary about plastic pollution in the Atlantic Ocean filmed through the lens of saving <i>356</i>, a newborn right whale killed and found on the shores of Cape Hatteras, NC. The full length documentary explores the death of <i>356</i>, the inspiration for its namesake short film, and various human activities that may have caused it, as well as the impact those human activities have on aquatic wildlife and the Coastal Atlantic ecosystem as a whole. Through the story of <i>356</i>, we hope that viewers take away a better understanding of what they can do to help save the whales, and in doing so, save the marine ecosystem as a whole.</p>
         </animated.div>
-        <img src='/circular_logo.png' style={{maxHeight:'200px'}} alt=""></img>
+        <img src='circular_logo.png' style={{maxHeight:'200px'}} alt=""></img>
         <div className={styles.movie_row}>
           <div className={styles.movie_poster}>
-            <img src='/6267ddaeab-poster.jpeg' alt="Promotional Poster"></img>
+            <img src='6267ddaeab-poster.jpeg' alt="Promotional Poster"></img>
           </div>
           <div className={styles.showings}>
             <div className={styles.showings_title}>

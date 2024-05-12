@@ -21,7 +21,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
           <picture>
-            <img src='/Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
+            <img src='Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
           <div className={styles.overlay}></div>
           <h1 className={styles.title}>Support Our Mission</h1>
@@ -54,9 +54,9 @@ export default function Home() {
             </div>
             <div className={styles.logos}>
               <p>many organization logos would go here and link to their websites</p>
-              <a href="https://plasticoceanproject.org"><img src='/circular_logo.png' alt=""></img></a>
-              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='\CFGLogoClear.png' alt=""></img></a>
-              <a href="https://google.com"><img src='/emptypfp.png' alt=""></img></a>
+              <a href="https://plasticoceanproject.org"><img src='circular_logo.png' alt=""></img></a>
+              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='CFGLogoClear.png' alt=""></img></a>
+              <a href="https://google.com"><img src='emptypfp.png' alt=""></img></a>
             </div>
           </div>
         </div>
