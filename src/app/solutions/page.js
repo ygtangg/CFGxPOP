@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState, useEffect } from 'react';
 import styles from "./page.module.css";
@@ -37,7 +38,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
           <picture>
-            <img src='\Bonnie with newborn whale 356.jpg'  alt="" className={styles.backgroundImage}></img>
+            <img src="Bonnie with newborn whale 356.jpg"  alt="" className={styles.backgroundImage}></img>
           </picture>
           <div className={styles.overlay}></div>
           <div className={styles.titleDiv}>
@@ -62,12 +63,12 @@ export default function Home() {
           <p><i>&quot;It is said that where there&apos;s life there&apos;s hope, and so no place can inspire us with more hopefulness than that great, life-making sea -that singular, wondrous ocean covering the blue planet.&quot;</i></p>
         </div>
         <div className={styles.rightPersonImg}>
-          <img src="/dr-carl-safina.jpg"  alt="Picture of Dr. Carl Safina"style={{height:200,width:200}}></img>
+          <img src="dr-carl-safina.jpg"  alt="Picture of Dr. Carl Safina"style={{height:200,width:200}}></img>
         </div>
       </animated.div>
       <animated.div className={styles.leftPerson} style={introAnimation}>
         <div className={styles.leftPersonImg}>
-          <img src="/paul-watson.jpg"  alt="Picture of Paul Watson"  style={{height:200,width:200}}></img>
+          <img src="paul-watson.jpg"  alt="Picture of Paul Watson"  style={{height:200,width:200}}></img>
         </div>
         <div className={styles.leftPersonText}>
           <h1>Paul Watson</h1>
@@ -82,12 +83,12 @@ export default function Home() {
           <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum ultricies nisl, vel mattis erat sollicitudin quis. Cras euismod tellus eget quam pharetra imperdiet sed sit amet lacus. Curabitur tincidunt arcu nec eleifend gravida.</i></p>
         </div>
         <div className={styles.rightPersonImg}>
-          <img src="/ralph-chami.jpg" alt="Picture of Ralph Chami" style={{height:200,width:200}}></img>
+          <img src="ralph-chami.jpg" alt="Picture of Ralph Chami" style={{height:200,width:200}}></img>
         </div>
       </animated.div>
       <animated.div className={styles.leftPerson} style={introAnimation}>
         <div className={styles.leftPersonImg}>
-          <img src="/dr-michael-moore.jpg"  alt="Picture of Dr. Michael Moore" style={{height:200,width:200}}></img>
+          <img src="dr-michael-moore.jpg"  alt="Picture of Dr. Michael Moore" style={{height:200,width:200}}></img>
         </div>
         <div className={styles.leftPersonText}>
           <h1>Dr. Michael Moore</h1>

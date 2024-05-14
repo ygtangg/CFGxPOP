@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import styles from "./page.module.css";
 import { useEffect, useRef} from 'react';
@@ -51,13 +52,12 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <div className={styles.imageContainer}>
-        <picture>
-          <img src='Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
+          <picture>
+            <img src='Aerial of whale 356.jpg' className={styles.backgroundImage} alt=""></img>
           </picture>
           <div className={styles.overlay}> </div>
           <h1 className={styles.title}>All of us are listening. <br/>
-            Will you?</h1>
-            
+          Will you?</h1>
         </div>
 
         <div className={styles.mainTexts}>

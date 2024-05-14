@@ -1,13 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel'; 
-
-// import { useState } from 'react';
+import React, { useCallback } from 'react';
+import useEmblaCarousel from 'embla-carousel-react'
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
   return (
     <><div className={styles.topPage}>
       <div className={styles.leftText}>
@@ -16,13 +24,23 @@ export default function Home() {
       </div>
       <img src='uncw-marine-mammal-lab.jpg' className={styles.rightImage} alt=""></img>
     </div><div>
-        <h2>Plastic Ocean Project</h2>
-        <Carousel>
-          <div>
-            <img src="otter_1.jpg" alt="image1" />
+      <h2>Plastic Ocean Project</h2>
+      <div className={styles.embla} ref={emblaRef}>
+        <div className={styles.embla__container}>
+          <div className={styles.embla__slide}>
+            <img src='whale_1.jpg' alt='slide 2'/>
           </div>
-        </Carousel>
-      </div></>
+          <div className={styles.embla__slide}>
+            <img src='otter_1.jpeg' alt='slide 2'/>
+          </div>
+          <div className={styles.embla__slide}>
+            <img src='dolphin_1.jpg' alt='slide 3'/>
+          </div>
+        </div>
+        <button className={styles.embla__prev} onClick={scrollPrev}>&#8249;</button>
+        <button className={styles.embla__next} onClick={scrollNext}>&#8250;</button>
+      </div>
+    </div></>
   );
 }
 
