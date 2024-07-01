@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <Link href="https://codeforgoodberkeley.github.io/index.html">
             <img
-              src="cfglogo_white_transparent.png"
+              src="logo/cfglogo_white_transparent.png"
               alt="cfg logo"
               className="cfglogo"
             />

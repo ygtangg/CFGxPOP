@@ -7,7 +7,7 @@ function renderLogo() {
   return (
     <Link className="logo-container" href="/home">
       <img
-        src="white_logo.png"
+        src="logo/pop_logo_white.png"
         alt="Logo"
         className="logo"
       />
@@ -47,8 +47,8 @@ function renderList(normal) {
           </Link>
         </li>
         <li>
-          <Link className={link_class} href="/solutions">
-            <p className="navbar-text">Solutions</p>
+          <Link className={link_class} href="/experts">
+            <p className="navbar-text">Hear From Our Experts</p>
           </Link>
         </li>
       </ul>

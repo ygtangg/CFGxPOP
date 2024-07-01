@@ -42,7 +42,7 @@ export default function Home() {
           </picture>
           <div className={styles.overlay}></div>
           <div className={styles.titleDiv}>
-            <h1 className={styles.title}>Solutions</h1>
+            <h1 className={styles.title}>Hear From Our Experts</h1>
           </div>
         </div>
       </div>

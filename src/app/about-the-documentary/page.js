@@ -53,7 +53,7 @@ export default function Home() {
       <div className={styles.description}>
         <div className={styles.imageContainer}>
           <picture>
-            <img src='Aerial of whale 356.jpg' className={styles.background_image} alt=""></img>
+            <img src='about_doc/right_whale.jpg' className={styles.background_image} alt="right whale"></img>
           </picture>
           <div className={styles.overlay}> </div>
           <h1 className={styles.title}>All of us are listening. <br/>
@@ -61,13 +61,18 @@ export default function Home() {
         </div>
 
         <div className={styles.mainTexts}>
-            <h2> Our Mission </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-        <div className={styles.mainTexts}>
-              <h2>Documentary Creation Outline <br/></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2 style={{color: "rgb(67, 130, 178)"}}>Documentary Creation Outline</h2>
+          <p>In 2019, we started what we thought would be a documentary about the North Atlantic Ocean, comprised of unique 
+            characteristics and complex systems, home to a wide range of organisms vocalizing below the ocean&apos;s surface. A 
+            film delicately balancing the beautiful sounds and scenes of the marine world contrasted against its destruction caused 
+            by human impacts.</p>
+          <p>What we didn&apos;t foresee is a story much more compelling, a &quot;who done it,&quot; following the death of a newborn 
+            critically endangered North Atlantic right whale.</p> 
+          <p>Was it manmade noise that caused the mother to lose her newborn, a ship strike, chemical or plastic pollution, was it discarded 
+             fishing gear or overfishing?</p> 
+          <p>We learn from marine experts what happened to this infant right whale, why this species and others are destined for extinction, 
+             and why it matters. The documentary dives deep into viable solutions that everyone can support in order to preserve the sounds of 
+             the sea and the marine life in it.</p>
         </div>
         
         {/* Timeline */}
@@ -201,10 +206,10 @@ export default function Home() {
                 <img src='laurel/toronto_indie.png' alt="Toronto Indie Filmmakers Festival"></img>
               </div>
               <div class={styles.grid_item}> 
-                <img src='laurel/agiff.png' alt="AGIFF Semi-Finalist"></img>
+                <img src='laurel/agiff.PNG' alt="AGIFF Semi-Finalist"></img>
               </div>
               <div class={styles.grid_item}> 
-                <img src='laurel/biff.png' alt="BIFF 2024"></img>
+                <img src='laurel/biff.PNG' alt="BIFF 2024"></img>
               </div>
               <div class={styles.grid_item}>
                 <img src='laurel/rome_women.png' alt="Rome Women Film Festival"></img>
@@ -284,7 +289,7 @@ export default function Home() {
             </div>
           </div>        
         </div>
-        
+
       </div>
     </main>
   );

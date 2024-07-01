@@ -105,8 +105,8 @@ export default function Home() {
 
             </div>
             <div className={styles.logos}>
-              <a href="https://plasticoceanproject.org"><img src='circular_logo.png' alt=""></img></a>
-              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='CFGLogoClear.png' alt=""></img></a>
+              <a href="https://plasticoceanproject.org"><img src='logo/pop_icon.png' alt=""></img></a>
+              <a href='https://codeforgoodberkeley.github.io/index.html'><img src='logo/cfg_icon.png' alt=""></img></a>
               <a href="https://google.com"><img src='emptypfp.png' alt=""></img></a>
             </div>
           </div>
