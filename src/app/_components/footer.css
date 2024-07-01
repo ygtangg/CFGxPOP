@@ -2,27 +2,91 @@
   left: 0%;
   bottom: 0%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: black;
   z-index: 99;
-
   margin-top: 50px;
   margin-bottom: 0px;
 }
 
-.logo {
+.cfglogo {
   width: 275px;
   height: auto;
-
-  margin-top: 20px;
   margin-bottom: 10px
 }
 
 .copyright {
-  font-size: 15px;
-  margin: 10px 10px 50px 10px;
+  font-size: 12px;
+  margin: 20px 10px 20px 10px;
 }
 
+.popname {
+  font-size: 25px;
+}
+
+.popname:hover {
+  color: rgb(48,106,149);
+  cursor: pointer;
+}
 .white-bar {
   margin: 0px 0px 20px 0px;
   padding: 0px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container div {
+  margin-top: 10px;
+}
+
+.address {
+  font-size: 17px;
+  color: rgb(204, 203, 203);
+}
+
+.social_contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.container button {
+  margin: 0 10px; /* Adjust margin between buttons as needed */
+  padding: 12px 20px;
+  font-size: 20px;
+  background-color: rgba(48, 105, 149); 
+  color: white; 
+  cursor: pointer;
+  font-family: 'Jura Bold';
+  text-decoration: none; 
+  border: none;
+}
+
+.container button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) { 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }

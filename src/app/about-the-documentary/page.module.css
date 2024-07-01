@@ -1,13 +1,8 @@
-.backgroundImage {
-  width: 80vw; /* Update the width to your desired value */
-  height: 25vw;
-  display: block;
-}
 .imageContainer {
   position: relative;
 }
 /* main image */
-.backgroundImage {
+.background_image {
   width: 100%;
   height: 25vw;
   display: block;
@@ -37,8 +32,13 @@
   margin-bottom: 20px; /* Add margin to the bottom */
 }
 .centerTexts {
-  margin-bottom: 20px; /* Add margin to the bottom */
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center; /* Center text within this specific container */
 }
   /* Slidebar CSS Portion:
@@ -185,22 +185,29 @@
   opacity: 1;
   transition-delay: 0.4s;
 }
-  /* Film festivals */
-.gridContainer {
+
+/* Film festivals */
+.laurels {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.laurel_grid_container {
   display: grid;
-  /* grid-template-columns: auto auto auto auto auto; */
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   grid-gap: 10px;
   background-color: transparent;
   padding: 10px;
   align-items: stretch;
+  width: 70%;
 }
-.gridItem {
+.grid_item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.gridItem img {
+.grid_item img {
   background-color: transparent;
   padding: 20px;
   font-size: 30px;
@@ -209,10 +216,7 @@
   height: auto;
   object-fit: cover;
 }
-.backgroundImage {
-  width: 100%; /* This will make the image take the full width of its parent container */
-  height: auto; /* This will scale the height while maintaining the aspect ratio */
-}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -220,4 +224,41 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.257) 0%, rgba(0, 0, 0, 0.706) 100%); /* Adjust gradient as needed */
+}
+
+ /* Sponsors */
+.sponsors {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sponsor_image {
+  width: 70%;
+  height: auto;
+}
+
+.sponsor_grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  grid-gap: 10px;
+  background-color: transparent;
+  align-items: stretch;
+  width: 70%;
+}
+.large_grid_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+}
+
+.large_grid_item img {
+  background-color: transparent;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
 }

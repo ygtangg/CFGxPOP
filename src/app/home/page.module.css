@@ -26,7 +26,6 @@
   padding-top:50px;
   display: flex;
   flex-direction: row;
-  
   }
 
   .movie_poster{
@@ -40,6 +39,7 @@
   padding-right:5%;
   }
 }
+
 @media only screen and (max-width: 1349px) { 
   .movie_poster{
     padding-top:50px;

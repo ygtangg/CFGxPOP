@@ -16,7 +16,7 @@
 :root {
   --black: #000000;
   --white: #ffffff;
-  --blue: #365d90;
+  --blue: rgb(48,106,149);
 }
 
 a:hover{
