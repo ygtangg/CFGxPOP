@@ -28,9 +28,11 @@
 .mainTexts {
   display: flex;
   flex-direction: column;
-  margin: 20px 100px 20px 100px;
+  margin: auto;
+  padding: 50px 0;
   text-align: justify;
   row-gap: 15px;
+  width: 80vw;
 }
 .centerTexts {
   display: flex;
@@ -42,6 +44,7 @@
   margin-top: 20px;
   text-align: center; /* Center text within this specific container */
 }
+
   /* Slidebar CSS Portion:
     1. section
     2. content

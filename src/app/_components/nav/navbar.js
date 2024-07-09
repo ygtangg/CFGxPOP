@@ -37,8 +37,8 @@ function renderList(normal) {
           </Link>
         </li>
         <li>
-          <Link className={link_class} href="/about-the-organization">
-            <p className="navbar-text">About The Organization</p>
+          <Link className={link_class} href="/about-the-partners">
+            <p className="navbar-text">About The Partners</p>
           </Link>
         </li>
         <li>

@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+
 import React, { useState, useEffect } from 'react';
 import styles from "./page.module.css";
-import { useTrail, useSpring, animated } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 function LeftPic() {
 

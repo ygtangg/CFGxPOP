@@ -1,0 +1,82 @@
+.topPage{
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  width: 80vw;
+}
+.topText{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 2rem;
+  width: 40vw;
+}
+.topText h2 {
+  font-family: 'Jura Bold';
+}
+.topText p {
+  line-height: 2.5rem;
+  width: 25vw;
+}
+.topImage {
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  background: rgba(31, 69, 99, 0.608);
+  width: 80vw;
+  margin: auto;
+}
+.carouselItem {
+  position: relative;
+  display: flex;
+  padding: 6rem 0;
+  align-items: center;
+  margin-left: 13vw;
+  column-gap: 1rem;
+}
+.carouselText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 2rem;
+  width: 35vw;
+  row-gap: 1.5rem;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1000px) {
+  .topPage{
+    flex-direction: column;
+    margin: auto;
+    row-gap: 2rem;
+  }
+  .topText p {
+    line-height: 2rem;
+    width: 80vw;
+  }
+  .topImage {
+    width: 100%;
+  }
+
+  .carouselItem {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carouselImg {
+    margin-top: 1rem;
+    width: 40vw;
+  }
+  .carouselText {
+    font-size: 0.5rem;
+    width: 60vw;
+  }
+}
