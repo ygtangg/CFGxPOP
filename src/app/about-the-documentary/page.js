@@ -4,10 +4,88 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import { useEffect, useRef} from 'react';
-// <script src="jquery.min.js"></script>
-/* SECTION 1: Barebone of the webpage */
-// magic number of the number of sections; adjust accordingly
+
+const laurels = [
+  { id: 1,
+    image: 'laurel/seoul.png',
+    description: 'Seoul International Short Film Festival',
+  },
+  { id: 2,
+    image: 'laurel/winner.png',
+    description: 'Winner Sofia International Frilm Festival',
+  },
+  { id: 3,
+    image: 'laurel/toronto_indie.png',
+    description: 'Toronto Indie Filmmakers Festival',
+  },
+  { id: 4,
+    image: 'laurel/agiff.PNG',
+    description: 'AGIFF Semi-Finalist',
+  },
+  { id: 5,
+    image: 'laurel/biff.PNG',
+    description: 'BIFF 2024',
+  },
+  { id: 6,
+    image: 'laurel/rome_women.png',
+    description: 'Rome Women Film Festival',
+  },
+  { id: 7,
+    image: 'laurel/tokyo_official.png',
+    description: 'Tokyo International Short Film Festival',
+  },
+  { id: 8,
+    image: 'laurel/your_way.PNG',
+    description: 'You Way Film Festival',
+  },
+  { id: 9,
+    image: 'laurel/ny_tri_state.png',
+    description: 'New York Tri-State',
+  },
+  { id: 10,
+    image: 'laurel/new_wave.png',
+    description: 'New Wave Short Film Festival',
+  },
+  { id: 11,
+    image: 'laurel/nnf.png',
+    description: 'Near Nazareth Festival',
+  },
+  { id: 12,
+    image: 'laurel/roma.png',
+    description: 'Roma Short Film Festival',
+  },
+  { id: 13,
+    image: 'laurel/golden_tree.png',
+    description: '7th Golden Tree',
+  },
+  { id: 14,
+    image: 'laurel/fiin.png',
+    description: 'FIIN',
+  },
+  { id: 15,
+    image: 'laurel/longleaf.png',
+    description: 'Longleaf Film Festival',
+  },
+  { id: 16,
+    image: 'laurel/awareness.png',
+    description: 'Awareness Festival',
+  },
+  { id: 17,
+    image: 'laurel/indigo_moon.png',
+    description: 'Indigo Moon Film Fest',
+  },
+  { id: 18,
+    image: 'laurel/vero_beach.png',
+    description: 'Vero Beach Film Festival',
+  },
+  { id: 19,
+    image: 'laurel/raleigh.png',
+    description: 'Raleigh Film & Art Festival',
+  }
+]
+
 export default function Home() {
+  /* Timeline functions */
   const contentRef = useRef(null);
   useEffect(() => {
     const tlContents = document.getElementsByClassName(styles.content);
@@ -46,7 +124,7 @@ export default function Home() {
           tlSections[i].addEventListener("mouseover", () => hoverSection(i))
           tlSections[i].addEventListener("mouseleave", () => leaveSection(i))
       })(i)
-    }
+    } 
   })
   return (
     <main className={styles.main}>
@@ -195,63 +273,11 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.laurel_grid_container}>
-            <div class={styles.grid_item}> 
-              <img src='laurel/seoul.png' alt="Seoul International Short Film Festival"></img>
+          {laurels.map(item => (
+            <div key={item.id} className={styles.grid_item}> 
+              <img src={item.image} alt={item.description}></img>
             </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/winner.png' alt="Winner Sofia International Frilm Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/toronto_indie.png' alt="Toronto Indie Filmmakers Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/agiff.PNG' alt="AGIFF Semi-Finalist"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/biff.PNG' alt="BIFF 2024"></img>
-            </div>
-            <div class={styles.grid_item}>
-              <img src='laurel/rome_women.png' alt="Rome Women Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/tokyo_official.png' alt="Tokyo International Short Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/your_way.PNG' alt="You Way Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/ny_tri_state.png' alt="New York Tri-State"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/new_wave.png' alt="New Wave Short Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/nnf.png' alt="Near Nazareth Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/roma.png' alt="Roma Short Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/golden_tree.png' alt="7th Golden Tree"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/fiin.png' alt="FIIN"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/longleaf.png' alt="Longleaf Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/awareness.png' alt="Awareness Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/indigo_moon.png' alt="Indigo Moon Film Fest"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/vero_beach.png' alt="Vero Beach Film Festival"></img>
-            </div>
-            <div class={styles.grid_item}> 
-              <img src='laurel/raleigh.png' alt="Raleigh Film & Art Festival"></img>
-            </div>
+          ))}
         </div>
       </div>
 
