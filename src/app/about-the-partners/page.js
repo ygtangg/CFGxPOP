@@ -7,6 +7,29 @@ import Link from "next/link";
 import dynamic from 'next/dynamic';
 import 'react-multi-carousel/lib/styles.css';
 
+const producers = [
+  { id: 1,
+    name: "Bonnie Louise Monteleone",
+    role: "Director"
+  },
+  { id: 2,
+    name: "Jason Andre",
+    role: "Director of Photography"
+  },
+  { id: 3,
+    name: "Jason Andre, Samuel Shores",
+    role: "Underwater Videographer"
+  },
+  { id: 4,
+    name: "Henry Klein, JT Fritsch",
+    role: "Editor / Cinematographer"
+  },
+  { id: 5,
+    name: "Garth Stevenson",
+    role: "Composer / Sound track"
+  }
+]
+
 // Import react-multi-carousel dynamically to prevent SSR issues
 const Carousel = dynamic(() => import('react-multi-carousel'), { ssr: false });
 
@@ -29,7 +52,7 @@ const carouselItems = [
   { id: 1, 
     name: 'Plasitic Ocean Project', 
     discription:<div>
-                  <p>We are a 501(c)3 non-profit based out of Wilmington, North Carolina. 
+                  <p>Plastic Ocean Project, Inc. is a 501(c)3 non-profit based out of Wilmington, North Carolina. 
                   Our mission is to attain <i>science-based solutions</i> to the plastic pollution 
                   crisis that <i>inspire all</i> to make <i>informed choices </i> to improve human and 
                   environmental health.</p>
@@ -71,6 +94,17 @@ export default function Home() {
               <br/> Without you guys, we would not be able to accomplish this. </p>
         </div>
         <img src='about_part/sailing.jpg' className={styles.topImage} alt="sailing"></img>
+      </div>
+      <div className={styles.production}>
+        <h2>--- Production Team ---</h2>
+        <div className={styles.productionTeam}>
+          {producers.map(item => (
+            <div key={item.id} className={styles.productionItem}>
+              <h3 style={{color: "rgb(67, 130, 178)"}}>{item.role}:</h3>
+              <p>{item.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <div className={styles.carousel}>
         <Carousel

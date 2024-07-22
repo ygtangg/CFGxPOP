@@ -25,6 +25,27 @@
   align-items: center;
 }
 
+.production {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.productionTeam {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.productionItem {
+  display: flex;
+  justify-content: space-between;
+  width: 65%; 
+  margin-bottom: 8px;
+}
+.productionItem p {
+  font-size: 1.75rem;
+}
+
 .carousel {
   position: relative;
   align-items: center;
@@ -65,6 +86,11 @@
   }
   .topImage {
     width: 100%;
+  }
+
+  .productionItem {
+    flex-direction: column;
+    align-items: center;
   }
 
   .carouselItem {
